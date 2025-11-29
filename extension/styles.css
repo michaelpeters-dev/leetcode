@@ -1,0 +1,299 @@
+/* GleetCode Content Script Styles - LeetCode Theme */
+
+/* Modal Overlay */
+.gleetcode-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  backdrop-filter: blur(4px);
+}
+
+/* Modal Container - LeetCode Style */
+.gleetcode-modal {
+  background: #282828;
+  border-radius: 8px;
+  padding: 0;
+  min-width: 360px;
+  max-width: 420px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border: 1px solid #3e3e3e;
+  animation: gleetcode-slide-in 0.2s ease-out;
+  overflow: hidden;
+}
+
+@keyframes gleetcode-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Modal Header - LeetCode Style */
+.gleetcode-modal-header {
+  padding: 16px 20px;
+  background: #1a1a1a;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.gleetcode-modal-header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #eff1f6bf;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gleetcode-modal-header h2::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffa116'%3E%3Cpath d='M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 22c-5.52 0-10-4.48-10-10S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-15h2v6h-2zm0 8h2v2h-2z'/%3E%3C/svg%3E") no-repeat center;
+  background-size: contain;
+}
+
+/* Modal Body */
+.gleetcode-modal-body {
+  padding: 20px;
+  background: #282828;
+}
+
+.gleetcode-modal-body p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #eff1f6bf;
+  line-height: 1.6;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gleetcode-modal-body p:last-child {
+  margin-bottom: 0;
+}
+
+.gleetcode-modal-body strong {
+  color: #eff1f6;
+  font-weight: 500;
+}
+
+.gleetcode-modal-body .gleetcode-value {
+  color: #ffa116;
+  font-weight: 500;
+}
+
+/* Difficulty Colors */
+.gleetcode-easy {
+  color: #00b8a3 !important;
+  font-weight: 600;
+}
+
+.gleetcode-medium {
+  color: #ffc01e !important;
+  font-weight: 600;
+}
+
+.gleetcode-hard {
+  color: #ff375f !important;
+  font-weight: 600;
+}
+
+/* Status Colors */
+.gleetcode-accepted {
+  color: #00b8a3 !important;
+  font-weight: 600;
+}
+
+.gleetcode-failed {
+  color: #ff375f !important;
+  font-weight: 600;
+}
+
+/* Modal Footer */
+.gleetcode-modal-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding: 16px 20px;
+  background: #1a1a1a;
+  border-top: 1px solid #3e3e3e;
+}
+
+/* Buttons - LeetCode Style */
+.gleetcode-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.gleetcode-btn-primary {
+  background: #ffa1161a;
+  color: #ffa116;
+  border: 1px solid #ffa11633;
+}
+
+.gleetcode-btn-primary:hover {
+  background: #ffa11633;
+  border-color: #ffa116;
+}
+
+.gleetcode-btn-secondary {
+  background: #ffffff0d;
+  color: #eff1f6bf;
+  border: 1px solid #ffffff1a;
+}
+
+.gleetcode-btn-secondary:hover {
+  background: #ffffff1a;
+  border-color: #ffffff33;
+}
+
+/* Problem Info Card */
+.gleetcode-problem-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.gleetcode-problem-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #eff1f6;
+  margin-bottom: 8px;
+}
+
+.gleetcode-problem-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.gleetcode-problem-meta span {
+  color: #eff1f6bf;
+}
+
+/* Stats Grid */
+.gleetcode-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.gleetcode-stat {
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.gleetcode-stat-label {
+  font-size: 12px;
+  color: #eff1f6a0;
+  margin-bottom: 4px;
+}
+
+.gleetcode-stat-value {
+  font-size: 14px;
+  color: #eff1f6;
+  font-weight: 500;
+}
+
+/* Notification - LeetCode Style */
+.gleetcode-notification {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 999999;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  animation: gleetcode-notification-in 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@keyframes gleetcode-notification-in {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.gleetcode-notification.gleetcode-fade-out {
+  animation: gleetcode-notification-out 0.3s ease-out forwards;
+}
+
+@keyframes gleetcode-notification-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+.gleetcode-notification.gleetcode-success {
+  background: #282828;
+  color: #00b8a3;
+  border: 1px solid #00b8a333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gleetcode-notification.gleetcode-success::before {
+  content: '✓';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #00b8a31a;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.gleetcode-notification.gleetcode-error {
+  background: #282828;
+  color: #ff375f;
+  border: 1px solid #ff375f33;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.gleetcode-notification.gleetcode-error::before {
+  content: '✕';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #ff375f1a;
+  border-radius: 50%;
+  font-size: 12px;
+}

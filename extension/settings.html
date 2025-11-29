@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GleetCode Settings</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a1a;
+      color: #eff1f6;
+      min-width: 400px;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+    }
+
+    /* Header */
+    .header {
+      background: #282828;
+      padding: 20px;
+      border-bottom: 1px solid #3e3e3e;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #ffa116 0%, #ff8c00 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: #1a1a1a;
+    }
+
+    .header-text h1 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #eff1f6;
+    }
+
+    .header-text p {
+      font-size: 12px;
+      color: #eff1f6a0;
+      margin-top: 2px;
+    }
+
+    /* Main content */
+    .main-content {
+      padding: 20px;
+    }
+
+    /* Form styles */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: #eff1f6bf;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #3e3e3e;
+      border-radius: 8px;
+      background: #282828;
+      color: #eff1f6;
+      font-size: 14px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: #ffa116;
+      box-shadow: 0 0 0 3px rgba(255, 161, 22, 0.1);
+    }
+
+    .form-group input::placeholder {
+      color: #eff1f660;
+    }
+
+    .form-group .hint {
+      font-size: 12px;
+      color: #eff1f6a0;
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    .form-group .hint a {
+      color: #ffa116;
+      text-decoration: none;
+    }
+
+    .form-group .hint a:hover {
+      text-decoration: underline;
+    }
+
+    .form-group .hint code {
+      background: #3e3e3e;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 11px;
+    }
+
+    /* Button */
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn-primary {
+      background: #ffa1161a;
+      color: #ffa116;
+      border: 1px solid #ffa11633;
+    }
+
+    .btn-primary:hover {
+      background: #ffa11633;
+      border-color: #ffa116;
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* Status messages */
+    .status {
+      margin-top: 16px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      display: none;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .status.success {
+      display: flex;
+      background: #00b8a31a;
+      border: 1px solid #00b8a333;
+      color: #00b8a3;
+    }
+
+    .status.error {
+      display: flex;
+      background: #ff375f1a;
+      border: 1px solid #ff375f33;
+      color: #ff375f;
+    }
+
+    .status.info {
+      display: flex;
+      background: #ffa1161a;
+      border: 1px solid #ffa11633;
+      color: #ffa116;
+    }
+
+    .status-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+
+    .status.success .status-icon { background: #00b8a333; }
+    .status.error .status-icon { background: #ff375f33; }
+    .status.info .status-icon { background: #ffa11633; }
+
+    /* Config card */
+    .config-card {
+      margin-top: 20px;
+      background: #282828;
+      border-radius: 8px;
+      border: 1px solid #3e3e3e;
+      overflow: hidden;
+    }
+
+    .config-header {
+      padding: 12px 16px;
+      background: #1a1a1a;
+      border-bottom: 1px solid #3e3e3e;
+      font-size: 13px;
+      font-weight: 500;
+      color: #eff1f6bf;
+    }
+
+    .config-body {
+      padding: 4px 0;
+    }
+
+    .config-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 16px;
+    }
+
+    .config-item:not(:last-child) {
+      border-bottom: 1px solid #3e3e3e;
+    }
+
+    .config-label {
+      font-size: 13px;
+      color: #eff1f6a0;
+    }
+
+    .config-value {
+      font-size: 13px;
+      font-weight: 500;
+      color: #ffa116;
+    }
+
+    .config-value.not-set { color: #ff375f; }
+    .config-value.success { color: #00b8a3; }
+
+    /* Footer */
+    .footer {
+      padding: 16px 20px;
+      text-align: center;
+      font-size: 11px;
+      color: #eff1f660;
+      border-top: 1px solid #3e3e3e;
+      background: #282828;
+    }
+
+    /* Loading spinner */
+    .loading {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid #ffa11633;
+      border-top-color: #ffa116;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-content">
+        <div class="logo">G</div>
+        <div class="header-text">
+          <h1>GleetCode</h1>
+          <p>Push LeetCode solutions to GitHub</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Settings -->
+    <div class="main-content">
+      <form id="settings-form">
+        <div class="form-group">
+          <label for="username">GitHub Username</label>
+          <input type="text" id="username" placeholder="your-username" required autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label for="token">Personal Access Token</label>
+          <input type="password" id="token" placeholder="ghp_xxxxxxxxxxxx" required autocomplete="off">
+          <p class="hint">
+            Create a token with <code>repo</code> scope at
+            <a href="https://github.com/settings/tokens/new" target="_blank">GitHub Settings</a>
+          </p>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="save-btn">
+          Save & Validate
+        </button>
+      </form>
+
+      <div id="status" class="status">
+        <span class="status-icon"></span>
+        <span class="status-text"></span>
+      </div>
+
+      <div class="config-card">
+        <div class="config-header">Current Configuration</div>
+        <div class="config-body">
+          <div class="config-item">
+            <span class="config-label">Username</span>
+            <span class="config-value not-set" id="current-username">Not configured</span>
+          </div>
+          <div class="config-item">
+            <span class="config-label">Token</span>
+            <span class="config-value not-set" id="current-token">Not configured</span>
+          </div>
+          <div class="config-item">
+            <span class="config-label">Repository</span>
+            <span class="config-value success">leetcode</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      GleetCode v1.0.0
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

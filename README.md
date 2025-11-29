@@ -2,78 +2,46 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-2-ffa116?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-1-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-1-ffc01e?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-5-ffa116?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-2-00b8a3?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-3-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-0-ff375f?style=for-the-badge)
 
 </div>
 
 My LeetCode solutions, automatically pushed by **GleetCode** Chrome Extension.
 
-## Progress
+## Repository Structure
 
-<div align="center">
-
-
-<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffa116;stop-opacity:0.3"/>
-      <stop offset="100%" style="stop-color:#ffa116;stop-opacity:0.05"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Background -->
-  <rect width="800" height="300" fill="#1a1a1a" rx="8"/>
-
-  <!-- Title -->
-  <text x="400" y="22" fill="#eff1f6" font-size="14" font-weight="600" text-anchor="middle">Cumulative Problems Solved</text>
-
-  <!-- Grid lines -->
-  <line x1="50" y1="30" x2="770" y2="30" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="34" fill="#888" font-size="12" text-anchor="end">2</text>
-  <line x1="50" y1="74" x2="770" y2="74" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="78" fill="#888" font-size="12" text-anchor="end">2</text>
-  <line x1="50" y1="118" x2="770" y2="118" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="122" fill="#888" font-size="12" text-anchor="end">1</text>
-  <line x1="50" y1="162" x2="770" y2="162" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="166" fill="#888" font-size="12" text-anchor="end">1</text>
-  <line x1="50" y1="206" x2="770" y2="206" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="210" fill="#888" font-size="12" text-anchor="end">0</text>
-  <line x1="50" y1="250" x2="770" y2="250" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="254" fill="#888" font-size="12" text-anchor="end">0</text>
-
-  <!-- Area fill -->
-  <path d="M 50 140 L 770 30 L 770 250 L 50 250 Z" fill="url(#areaGradient)"/>
-
-  <!-- Line -->
-  <path d="M 50 140 L 770 30" fill="none" stroke="#ffa116" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Data points -->
-  <circle cx="50" cy="140" r="4" fill="#ffa116"/>
-    <circle cx="770" cy="30" r="4" fill="#ffa116"/>
-
-  <!-- X-axis labels -->
-  <text x="50" y="285" fill="#888" font-size="11" text-anchor="start">Nov 29</text>
-  <text x="770" y="285" fill="#888" font-size="11" text-anchor="end">Nov 28</text>
-
-  <!-- Y-axis label -->
-  <text x="15" y="150" fill="#888" font-size="12" text-anchor="middle" transform="rotate(-90, 15, 150)">Problems Solved</text>
-</svg>
-
-</div>
+```
+├── solutions/     # LeetCode problem solutions
+├── extension/     # GleetCode Chrome extension source code
+└── README.md
+```
 
 ## Solutions
 
-| # | Title | Difficulty | Solution | Status | Date |
-|:---:|:------|:----------:|:--------:|:------:|:----:|
-| 1 | Two Sum | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [1_two_sum.py](1_two_sum.py) | ❌ â Accepted | Nov 29, 2025 |
-| 2 | Add Two Numbers | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [2_add_two_numbers.py](2_add_two_numbers.py) | ✅ Accepted | Nov 29, 2025 |
+| # | Title | Difficulty | Solution |
+|:---:|:------|:----------:|:--------:|
+| 1 | Two Sum | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [1_two_sum.py](solutions/1_two_sum.py) |
+| 2 | Add Two Numbers | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [2_add_two_numbers.py](solutions/2_add_two_numbers.py) |
+| 3 | Longest Substring Without Repeating Characters | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [3_longest_substring_without_repeating_characters.py](solutions/3_longest_substring_without_repeating_characters.py) |
+| 5 | Longest Palindromic Substring | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [5_longest_palindromic_substring.py](solutions/5_longest_palindromic_substring.py) |
+| 9 | Palindrome Number | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [9_palindrome_number.py](solutions/9_palindrome_number.py) |
 
+## GleetCode Extension
+
+The `extension/` folder contains the source code for the GleetCode Chrome extension, which automatically pushes accepted LeetCode submissions to this repository.
+
+### Installation
+
+1. Open Chrome and go to `chrome://extensions/`
+2. Enable "Developer mode"
+3. Click "Load unpacked" and select the `extension/` folder
+4. Configure your GitHub credentials in the extension popup
 
 ---
 
 <div align="center">
-<sub>Auto-generated by <a href="https://github.com">GleetCode</a> Chrome Extension</sub>
+<sub>Auto-generated by <a href="https://github.com/michaelpeters-dev/leetcode">GleetCode</a> Chrome Extension</sub>
 </div>

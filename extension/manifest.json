@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "GleetCode - LeetCode to GitHub",
+  "version": "1.0.0",
+  "description": "Automatically push your LeetCode solutions to GitHub",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "notifications",
+    "tabs",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://api.github.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "settings.html",
+    "default_title": "GleetCode Settings"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["modal.html", "styles.css"],
+      "matches": ["https://leetcode.com/*"]
+    }
+  ]
+}
