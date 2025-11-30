@@ -54,7 +54,7 @@ My LeetCode solutions, automatically pushed by **GleetCode** Chrome Extension.
   <circle cx="50" cy="30" r="4" fill="#ffa116"/>
 
   <!-- X-axis labels -->
-  <text x="50" y="285" fill="#888" font-size="11" text-anchor="start">Nov 28</text>
+  <text x="50" y="285" fill="#888" font-size="11" text-anchor="start">Nov 29</text>
 
   <!-- Y-axis label -->
   <text x="15" y="150" fill="#888" font-size="12" text-anchor="middle" transform="rotate(-90, 15, 150)">Problems Solved</text>
