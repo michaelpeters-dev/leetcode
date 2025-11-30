@@ -4,20 +4,16 @@
 # URL: https://leetcode.com/problems/unique-paths/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: N/A
+# Memory: 17.90 MB
 
-        def dfs(r, c):        def dfs(r, c):
-            if r>=m or c>=n:            if r>=m or c>=n:
-                return 0                return 0
+class Solution:class Solution:
+    def uniquePaths(self, m: int, n: int) -> int:    def uniquePaths(self, m: int, n: int) -> int:
+        res = [[0] * (n + 1)] * (m + 1)        res = [[0] * (n + 1)] * (m + 1)
+        res[m-1][n-1] = 1        res[m-1][n-1] = 1
 
-            count = dfs(r + 1, c) + dfs(r, c + 1)            count = dfs(r + 1, c) + dfs(r, c + 1)
-
-            return count            return count
+        for r in range(m-1, -1, -1):        for r in range(m-1, -1, -1):
+            for c in range(n - 1, -1, -1):            for c in range(n - 1, -1, -1):
+                res[r][c] = res[r + 1][c] + res[r][c + 1]                res[r][c] = res[r + 1][c] + res[r][c + 1]
                 
-        return dfs(0, 0)        return dfs(0, 0)
-            if r==ENDPOINT[0] and c==ENDPOINT[1]:            if r==ENDPOINT[0] and c==ENDPOINT[1]:
-                return 1                return 1
-            dp[(r, c)] = count            dp[(r, c)] = count
-            if (r, c) in dp:            if (r, c) in dp:
-                return dp[(r, c)]                return dp[(r, c)]
-        
+        return res[0][0]        return res[0][0]
+
