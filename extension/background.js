@@ -65,7 +65,7 @@ async function getFileContent(username, path) {
   }
 
   return {
-    content: atob(result.data.content.replace(/\n/g, '')),
+    content: decodeURIComponent(escape(atob(result.data.content.replace(/\n/g, '')))),
     sha: result.data.sha
   };
 }
