@@ -3,17 +3,17 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/unique-paths/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 17.90 MB
 
-class Solution(object):
-    def uniquePaths(self, m, n):
-        prevRow = [0] * n
+class Solution:class Solution:
+    def uniquePaths(self, m: int, n: int) -> int:    def uniquePaths(self, m: int, n: int) -> int:
+        res = [[0] * (n + 1)] * (m + 1)        res = [[0] * (n + 1)] * (m + 1)
+        res[m-1][n-1] = 1        res[m-1][n-1] = 1
 
-        for r in range(m-1, -1, -1):
-            curRow = [0] * n
-            curRow[n - 1] = 1
-            for c in range(n - 2, -1, -1):
-                curRow[c]=curRow[c+1] + prevRow[c]
-            prevRow = curRow
-        return prevRow[0]
+        for r in range(m-1, -1, -1):        for r in range(m-1, -1, -1):
+            for c in range(n - 1, -1, -1):            for c in range(n - 1, -1, -1):
+                res[r][c] = res[r + 1][c] + res[r][c + 1]                res[r][c] = res[r + 1][c] + res[r][c + 1]
+                
+        return res[0][0]        return res[0][0]
+

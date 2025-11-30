@@ -354,7 +354,7 @@ ${chart ? `<div align="center">\n\n${chart}\n\n</div>` : '_No progress data yet.
 }
 
 // Update README with new problem
-async function updateReadme(username, problemNumber, problemTitle, filename, status, difficulty, timestamp) {
+async function updateReadme(username, problemNumber, problemTitle, filepath, status, difficulty, timestamp) {
   let problems = [];
   let existingSha = null;
 
@@ -365,12 +365,13 @@ async function updateReadme(username, problemNumber, problemTitle, filename, sta
   }
 
   const existingIndex = problems.findIndex(p => p.number === parseInt(problemNumber));
+  const displayName = filepath.split('/').pop(); // Get just the filename for display
 
   const newProblem = {
     number: parseInt(problemNumber),
     title: problemTitle,
     difficulty: difficulty,
-    file: `[${filename}](${filename})`,
+    file: `[${displayName}](${filepath})`,
     status: status,
     timestamp: timestamp
   };
@@ -412,14 +413,15 @@ async function pushSolution(data) {
   }
 
   const filename = formatFilename(data.problemNumber, data.problemSlug);
+  const filepath = `solutions/${filename}`;
   const fileContent = formatFileContent(data);
   const commitMessage = `${data.problemNumber}. ${data.problemTitle} (Python)`;
 
-  const existingFile = await getFileContent(username, filename);
+  const existingFile = await getFileContent(username, filepath);
   const sha = existingFile ? existingFile.sha : null;
 
-  await createOrUpdateFile(username, filename, fileContent, commitMessage, sha);
-  await updateReadme(username, data.problemNumber, data.problemTitle, filename, data.status, data.difficulty, data.timestamp);
+  await createOrUpdateFile(username, filepath, fileContent, commitMessage, sha);
+  await updateReadme(username, data.problemNumber, data.problemTitle, filepath, data.status, data.difficulty, data.timestamp);
 
   return { success: true };
 }

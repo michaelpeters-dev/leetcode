@@ -23,7 +23,7 @@ _Solve more problems to see your progress chart!_
 | 2 | Add Two Numbers | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [2_add_two_numbers.py](solutions/2_add_two_numbers.py) | Accepted | - |
 | 3 | Longest Substring Without Repeating Characters | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [3_longest_substring_without_repeating_characters.py](solutions/3_longest_substring_without_repeating_characters.py) | Accepted | - |
 | 5 | Longest Palindromic Substring | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [5_longest_palindromic_substring.py](solutions/5_longest_palindromic_substring.py) | Accepted | - |
-| 6 | Zigzag Conversion | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [6_zigzag_conversion.py](6_zigzag_conversion.py) | Accepted | - |
+| 6 | Zigzag Conversion | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [6_zigzag_conversion.py](solutions/6_zigzag_conversion.py) | Accepted | - |
 | 9 | Palindrome Number | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [9_palindrome_number.py](solutions/9_palindrome_number.py) | Accepted | - |
 | 11 | Container With Most Water | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [11_container_with_most_water.py](solutions/11_container_with_most_water.py) | Accepted | - |
 | 13 | Roman to Integer | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [13_roman_to_integer.py](solutions/13_roman_to_integer.py) | Accepted | - |
