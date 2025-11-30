@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-1-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-2-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-0-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-1-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-2-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-0-ff375f?style=for-the-badge)
 
 </div>
@@ -32,29 +32,31 @@ My LeetCode solutions, automatically pushed by **GleetCode** Chrome Extension.
 
   <!-- Grid lines -->
   <line x1="50" y1="30" x2="770" y2="30" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="34" fill="#888" font-size="12" text-anchor="end">1</text>
+  <text x="40" y="34" fill="#888" font-size="12" text-anchor="end">2</text>
   <line x1="50" y1="74" x2="770" y2="74" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="78" fill="#888" font-size="12" text-anchor="end">1</text>
+  <text x="40" y="78" fill="#888" font-size="12" text-anchor="end">2</text>
   <line x1="50" y1="118" x2="770" y2="118" stroke="#3e3e3e" stroke-dasharray="4"/>
   <text x="40" y="122" fill="#888" font-size="12" text-anchor="end">1</text>
   <line x1="50" y1="162" x2="770" y2="162" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="166" fill="#888" font-size="12" text-anchor="end">0</text>
+  <text x="40" y="166" fill="#888" font-size="12" text-anchor="end">1</text>
   <line x1="50" y1="206" x2="770" y2="206" stroke="#3e3e3e" stroke-dasharray="4"/>
   <text x="40" y="210" fill="#888" font-size="12" text-anchor="end">0</text>
   <line x1="50" y1="250" x2="770" y2="250" stroke="#3e3e3e" stroke-dasharray="4"/>
   <text x="40" y="254" fill="#888" font-size="12" text-anchor="end">0</text>
 
   <!-- Area fill -->
-  <path d="M 50 30 L 50 250 L 50 250 Z" fill="url(#areaGradient)"/>
+  <path d="M 50 140 L 770 30 L 770 250 L 50 250 Z" fill="url(#areaGradient)"/>
 
   <!-- Line -->
-  <path d="M 50 30" fill="none" stroke="#ffa116" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 50 140 L 770 30" fill="none" stroke="#ffa116" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- Data points -->
-  <circle cx="50" cy="30" r="4" fill="#ffa116"/>
+  <circle cx="50" cy="140" r="4" fill="#ffa116"/>
+    <circle cx="770" cy="30" r="4" fill="#ffa116"/>
 
   <!-- X-axis labels -->
-  <text x="50" y="285" fill="#888" font-size="11" text-anchor="start">Nov 29</text>
+  <text x="50" y="285" fill="#888" font-size="11" text-anchor="start">Nov 30</text>
+  <text x="770" y="285" fill="#888" font-size="11" text-anchor="end">Nov 29</text>
 
   <!-- Y-axis label -->
   <text x="15" y="150" fill="#888" font-size="12" text-anchor="middle" transform="rotate(-90, 15, 150)">Problems Solved</text>
@@ -66,7 +68,8 @@ My LeetCode solutions, automatically pushed by **GleetCode** Chrome Extension.
 
 | # | Title | Difficulty | Solution | Status | Date |
 |:---:|:------|:----------:|:--------:|:------:|:----:|
-| 62 | Unique Paths | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [62_unique_paths.py](62_unique_paths.py) | ✅ Accepted | Nov 30, 2025 |
+| 6 | Zigzag Conversion | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [6_zigzag_conversion.py](6_zigzag_conversion.py) | ✅ Accepted | Nov 30, 2025 |
+| 62 | Unique Paths | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [62_unique_paths.py](62_unique_paths.py) | ❌ â Accepted | Nov 30, 2025 |
 
 
 ---
