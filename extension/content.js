@@ -18,25 +18,35 @@
     let problemTitle = null;
     let difficulty = null;
 
-    // Method 1: Try the problem title element (new UI)
-    const titleElement = document.querySelector('[data-cy="question-title"]') ||
-                         document.querySelector('.text-title-large') ||
-                         document.querySelector('div[class*="text-title-large"]') ||
-                         document.querySelector('a[href*="/problems/"] span.text-lg');
+    // Method 1: Try the problem title element (new UI) - multiple selectors
+    const titleSelectors = [
+      '[data-cy="question-title"]',
+      '.text-title-large',
+      'div[class*="text-title-large"]',
+      'a[href*="/problems/"] span.text-lg',
+      'a[class*="text-title-large"]',
+      'div[class*="flexlayout__tab"] a[href*="/problems/"]',
+      '[class*="title"]',
+      'a[href*="/problems/' + problemSlug + '"]'
+    ];
 
-    if (titleElement) {
-      const titleText = titleElement.textContent.trim();
-      const match = titleText.match(/^(\d+)\.\s*(.+)$/);
-      if (match) {
-        problemNumber = match[1];
-        problemTitle = match[2].trim();
+    for (const selector of titleSelectors) {
+      const el = document.querySelector(selector);
+      if (el) {
+        const titleText = el.textContent.trim();
+        const match = titleText.match(/^(\d+)\.\s*(.+)$/);
+        if (match) {
+          problemNumber = match[1];
+          problemTitle = match[2].trim();
+          break;
+        }
       }
     }
 
     // Method 2: Try document title
     if (!problemNumber) {
       const docTitle = document.title;
-      const match = docTitle.match(/^(\d+)\.\s*([^-]+)/);
+      const match = docTitle.match(/(\d+)\.\s*([^-|]+)/);
       if (match) {
         problemNumber = match[1];
         problemTitle = match[2].trim();
@@ -48,10 +58,38 @@
       const metaTitle = document.querySelector('meta[property="og:title"]');
       if (metaTitle) {
         const content = metaTitle.getAttribute('content');
-        const match = content.match(/^(\d+)\.\s*(.+?)(?:\s*-\s*LeetCode)?$/);
+        const match = content.match(/(\d+)\.\s*(.+?)(?:\s*-\s*LeetCode)?$/);
         if (match) {
           problemNumber = match[1];
           problemTitle = match[2].trim();
+        }
+      }
+    }
+
+    // Method 4: Search all text on page for problem number pattern
+    if (!problemNumber) {
+      const allLinks = document.querySelectorAll('a[href*="/problems/"]');
+      for (const link of allLinks) {
+        const text = link.textContent.trim();
+        const match = text.match(/^(\d+)\.\s*(.+)$/);
+        if (match) {
+          problemNumber = match[1];
+          problemTitle = match[2].trim();
+          break;
+        }
+      }
+    }
+
+    // Method 5: Try to get from breadcrumb or header
+    if (!problemNumber) {
+      const headerElements = document.querySelectorAll('h1, h2, h3, [class*="header"], [class*="breadcrumb"]');
+      for (const el of headerElements) {
+        const text = el.textContent.trim();
+        const match = text.match(/(\d+)\.\s*([A-Za-z][\w\s]+)/);
+        if (match) {
+          problemNumber = match[1];
+          problemTitle = match[2].trim();
+          break;
         }
       }
     }
@@ -382,6 +420,8 @@
 
     try {
       const problemInfo = getProblemInfo();
+      console.log('GleetCode: Problem info:', problemInfo);
+      console.log('GleetCode: Document title:', document.title);
       if (!problemInfo.number || !problemInfo.title) {
         console.log('GleetCode: Could not extract problem info');
         isProcessing = false;
@@ -447,10 +487,43 @@
       if (submitButton) {
         const buttonText = submitButton.textContent.toLowerCase();
         if (buttonText.includes('submit')) {
+          console.log('GleetCode: Submit button clicked');
           setTimeout(handleSubmission, 500);
         }
       }
     }, true);
+
+    // Also watch for URL changes to submission results page
+    let lastUrl = location.href;
+    const urlObserver = new MutationObserver(() => {
+      if (location.href !== lastUrl) {
+        lastUrl = location.href;
+        // Check if we navigated to a submissions page after submitting
+        if (location.href.includes('/submissions/')) {
+          console.log('GleetCode: Detected navigation to submissions page');
+          setTimeout(handleSubmission, 1500);
+        }
+      }
+    });
+    urlObserver.observe(document.body, { childList: true, subtree: true });
+
+    // Watch for the "Accepted" result appearing on the page
+    const resultObserver = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        if (mutation.addedNodes.length) {
+          const text = document.body.innerText;
+          if (text.includes('Accepted') && !isProcessing) {
+            // Check if this looks like a submission result
+            const hasRuntime = text.includes('ms') && text.includes('MB');
+            if (hasRuntime) {
+              console.log('GleetCode: Detected Accepted result on page');
+              setTimeout(handleSubmission, 500);
+            }
+          }
+        }
+      }
+    });
+    resultObserver.observe(document.body, { childList: true, subtree: true });
 
     document.addEventListener('keydown', (event) => {
       if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
