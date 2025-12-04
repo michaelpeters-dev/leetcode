@@ -9,7 +9,7 @@
 
 </div>
 
-My LeetCode solutions, automatically pushed by **GleetCode** Chrome Extension.
+My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension (Gleetcode).
 
 ## Progress
 
