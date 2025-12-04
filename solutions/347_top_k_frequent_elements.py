@@ -3,21 +3,22 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/top-k-frequent-elements/
 # Submission Status: Accepted
-# Runtime: 11 ms
+# Runtime: 0 ms
 # Memory: 21.00 MB
 
-        if k == 0:        if k == 0:
-            return 0            return 0
+class·‌Solution:class·‌Solution:
+·‌·‌·‌·‌def·‌topKFrequent(self,·‌nums:·‌List[int],·‌k:·‌int)·‌->·‌List[int]:·‌·‌·‌·‌def·‌topKFrequent(self,·‌nums:·‌List[int],·‌k:·‌int)·‌->·‌List[int]:
+·‌·‌·‌·‌·‌·‌·‌·‌count·‌=·‌{}·‌·‌·‌·‌·‌·‌·‌·‌count·‌=·‌{}
+·‌·‌·‌·‌·‌·‌·‌·‌freq·‌=·‌[[]·‌for·‌i·‌in·‌range(len(nums)·‌+·‌1)]·‌·‌·‌·‌·‌·‌·‌·‌freq·‌=·‌[[]·‌for·‌i·‌in·‌range(len(nums)·‌+·‌1)]
 
-        temp = {}        temp = {}
-        for i in range(len(nums)):        for i in range(len(nums)):
-            temp[nums[i]] = temp.get(nums[i], 0) + 1            temp[nums[i]] = temp.get(nums[i], 0) + 1
-        print(temp)        print(temp)
+·‌·‌·‌·‌·‌·‌·‌·‌for·‌n·‌in·‌nums:·‌·‌·‌·‌·‌·‌·‌·‌for·‌n·‌in·‌nums:
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌count[n]·‌=·‌1·‌+·‌count.get(n,·‌0)·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌count[n]·‌=·‌1·‌+·‌count.get(n,·‌0)
+·‌·‌·‌·‌·‌·‌·‌·‌for·‌n,·‌c·‌in·‌count.items():·‌·‌·‌·‌·‌·‌·‌·‌for·‌n,·‌c·‌in·‌count.items():
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌freq[c].append(n)·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌freq[c].append(n)
 
-        sorted_items = sorted(temp.items(), key = lambda item:item[1], reverse=True)        sorted_items = sorted(temp.items(), key = lambda item:item[1], reverse=True)
-                
-        res = []        res = []
-        for j in range(k):        for j in range(k):
-            res.append(sorted_items[j][0])            res.append(sorted_items[j][0])
-        print(sorted_items)        print(sorted_items)
-        return res        return res
+·‌·‌·‌·‌·‌·‌·‌·‌res·‌=·‌[]·‌·‌·‌·‌·‌·‌·‌·‌res·‌=·‌[]
+·‌·‌·‌·‌·‌·‌·‌·‌for·‌i·‌in·‌range(len(freq)·‌-·‌1,·‌0,·‌-1):·‌·‌·‌·‌·‌·‌·‌·‌for·‌i·‌in·‌range(len(freq)·‌-·‌1,·‌0,·‌-1):
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌for·‌n·‌in·‌freq[i]:·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌for·‌n·‌in·‌freq[i]:
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌res.append(n)·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌res.append(n)
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌if·‌len(res)==k:·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌if·‌len(res)==k:
+·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌return·‌res·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌·‌return·‌res
