@@ -11,63 +11,6 @@
 
 My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension (Gleetcode).
 
-## Progress
-
-<div align="center">
-
-
-<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffa116;stop-opacity:0.3"/>
-      <stop offset="100%" style="stop-color:#ffa116;stop-opacity:0.05"/>
-    </linearGradient>
-  </defs>
-
-  <!-- Background -->
-  <rect width="800" height="300" fill="#1a1a1a" rx="8"/>
-
-  <!-- Title -->
-  <text x="400" y="22" fill="#eff1f6" font-size="14" font-weight="600" text-anchor="middle">Cumulative Problems Solved</text>
-
-  <!-- Grid lines -->
-  <line x1="50" y1="30" x2="770" y2="30" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="34" fill="#888" font-size="12" text-anchor="end">107</text>
-  <line x1="50" y1="74" x2="770" y2="74" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="78" fill="#888" font-size="12" text-anchor="end">86</text>
-  <line x1="50" y1="118" x2="770" y2="118" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="122" fill="#888" font-size="12" text-anchor="end">64</text>
-  <line x1="50" y1="162" x2="770" y2="162" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="166" fill="#888" font-size="12" text-anchor="end">43</text>
-  <line x1="50" y1="206" x2="770" y2="206" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="210" fill="#888" font-size="12" text-anchor="end">21</text>
-  <line x1="50" y1="250" x2="770" y2="250" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="254" fill="#888" font-size="12" text-anchor="end">0</text>
-
-  <!-- Area fill -->
-  <path d="M 50 30 L 230 217.10280373831776 L 410 200.65420560747663 L 590 73.17757009345794 L 770 46.448598130841134 L 770 250 L 50 250 Z" fill="url(#areaGradient)"/>
-
-  <!-- Line -->
-  <path d="M 50 30 L 230 217.10280373831776 L 410 200.65420560747663 L 590 73.17757009345794 L 770 46.448598130841134" fill="none" stroke="#ffa116" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Data points -->
-  <circle cx="50" cy="30" r="4" fill="#ffa116"/>
-    <circle cx="230" cy="217.10280373831776" r="4" fill="#ffa116"/>
-    <circle cx="410" cy="200.65420560747663" r="4" fill="#ffa116"/>
-    <circle cx="590" cy="73.17757009345794" r="4" fill="#ffa116"/>
-    <circle cx="770" cy="46.448598130841134" r="4" fill="#ffa116"/>
-
-  <!-- X-axis labels -->
-  <text x="50" y="285" fill="#888" font-size="11" text-anchor="start">Invalid Date</text>
-  <text x="410" y="285" fill="#888" font-size="11" text-anchor="middle">Dec 1</text>
-  <text x="770" y="285" fill="#888" font-size="11" text-anchor="end">Dec 3</text>
-
-  <!-- Y-axis label -->
-  <text x="15" y="150" fill="#888" font-size="12" text-anchor="middle" transform="rotate(-90, 15, 150)">Problems Solved</text>
-</svg>
-
-</div>
-
 ## Solutions
 
 | # | Title | Difficulty | Solution | Status | Date |
