@@ -70,8 +70,8 @@ My LeetCode solutions, automatically pushed by **GleetCode** Chrome Extension.
 
 | # | Title | Difficulty | Solution | Status | Date |
 |:---:|:------|:----------:|:--------:|:------:|:----:|
-| 15 | 3Sum | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [15_3sum.py](solutions/15_3sum.py) | ❌ ✅ Accepted | Dec 6, 2025 |
-| 167 | Two Sum II - Input Array Is Sorted | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [167_two_sum_ii_input_array_is_sorted.py](solutions/167_two_sum_ii_input_array_is_sorted.py) | ❌ ❌ ✅ Accepted | Dec 5, 2025 |
+| 15 | 3Sum | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [15_3sum.py](solutions/15_3sum.py) | ❌ ❌ ✅ Accepted | Dec 6, 2025 |
+| 167 | Two Sum II - Input Array Is Sorted | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [167_two_sum_ii_input_array_is_sorted.py](solutions/167_two_sum_ii_input_array_is_sorted.py) | ❌ ❌ ❌ ✅ Accepted | Dec 5, 2025 |
 | 543 | Diameter of Binary Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [543_diameter_of_binary_tree.py](solutions/543_diameter_of_binary_tree.py) | ✅ Accepted | Dec 7, 2025 |
 
 
