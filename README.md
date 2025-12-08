@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-3-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-4-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-1-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-2-ffc01e?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-0-ff375f?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-1-ff375f?style=for-the-badge)
 
 </div>
 
@@ -32,33 +32,34 @@ My LeetCode solutions, automatically pushed by **GleetCode** Chrome Extension.
 
   <!-- Grid lines -->
   <line x1="50" y1="30" x2="770" y2="30" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="34" fill="#888" font-size="12" text-anchor="end">3</text>
+  <text x="40" y="34" fill="#888" font-size="12" text-anchor="end">4</text>
   <line x1="50" y1="74" x2="770" y2="74" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="78" fill="#888" font-size="12" text-anchor="end">2</text>
+  <text x="40" y="78" fill="#888" font-size="12" text-anchor="end">3</text>
   <line x1="50" y1="118" x2="770" y2="118" stroke="#3e3e3e" stroke-dasharray="4"/>
   <text x="40" y="122" fill="#888" font-size="12" text-anchor="end">2</text>
   <line x1="50" y1="162" x2="770" y2="162" stroke="#3e3e3e" stroke-dasharray="4"/>
-  <text x="40" y="166" fill="#888" font-size="12" text-anchor="end">1</text>
+  <text x="40" y="166" fill="#888" font-size="12" text-anchor="end">2</text>
   <line x1="50" y1="206" x2="770" y2="206" stroke="#3e3e3e" stroke-dasharray="4"/>
   <text x="40" y="210" fill="#888" font-size="12" text-anchor="end">1</text>
   <line x1="50" y1="250" x2="770" y2="250" stroke="#3e3e3e" stroke-dasharray="4"/>
   <text x="40" y="254" fill="#888" font-size="12" text-anchor="end">0</text>
 
   <!-- Area fill -->
-  <path d="M 50 176.66666666666669 L 410 103.33333333333334 L 770 30 L 770 250 L 50 250 Z" fill="url(#areaGradient)"/>
+  <path d="M 50 195 L 290 140 L 530 85 L 770 30 L 770 250 L 50 250 Z" fill="url(#areaGradient)"/>
 
   <!-- Line -->
-  <path d="M 50 176.66666666666669 L 410 103.33333333333334 L 770 30" fill="none" stroke="#ffa116" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 50 195 L 290 140 L 530 85 L 770 30" fill="none" stroke="#ffa116" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- Data points -->
-  <circle cx="50" cy="176.66666666666669" r="4" fill="#ffa116"/>
-    <circle cx="410" cy="103.33333333333334" r="4" fill="#ffa116"/>
+  <circle cx="50" cy="195" r="4" fill="#ffa116"/>
+    <circle cx="290" cy="140" r="4" fill="#ffa116"/>
+    <circle cx="530" cy="85" r="4" fill="#ffa116"/>
     <circle cx="770" cy="30" r="4" fill="#ffa116"/>
 
   <!-- X-axis labels -->
   <text x="50" y="285" fill="#888" font-size="11" text-anchor="start">Dec 5</text>
-  <text x="410" y="285" fill="#888" font-size="11" text-anchor="middle">Dec 6</text>
-  <text x="770" y="285" fill="#888" font-size="11" text-anchor="end">Dec 6</text>
+  <text x="530" y="285" fill="#888" font-size="11" text-anchor="middle">Dec 7</text>
+  <text x="770" y="285" fill="#888" font-size="11" text-anchor="end">Dec 8</text>
 
   <!-- Y-axis label -->
   <text x="15" y="150" fill="#888" font-size="12" text-anchor="middle" transform="rotate(-90, 15, 150)">Problems Solved</text>
@@ -70,9 +71,10 @@ My LeetCode solutions, automatically pushed by **GleetCode** Chrome Extension.
 
 | # | Title | Difficulty | Solution | Status | Date |
 |:---:|:------|:----------:|:--------:|:------:|:----:|
-| 15 | 3Sum | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [15_3sum.py](solutions/15_3sum.py) | ❌ ❌ ✅ Accepted | Dec 6, 2025 |
-| 167 | Two Sum II - Input Array Is Sorted | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [167_two_sum_ii_input_array_is_sorted.py](solutions/167_two_sum_ii_input_array_is_sorted.py) | ❌ ❌ ❌ ✅ Accepted | Dec 5, 2025 |
-| 543 | Diameter of Binary Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [543_diameter_of_binary_tree.py](solutions/543_diameter_of_binary_tree.py) | ✅ Accepted | Dec 7, 2025 |
+| 4 | Median of Two Sorted Arrays | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [4_median_of_two_sorted_arrays.py](solutions/4_median_of_two_sorted_arrays.py) | ✅ Accepted | Dec 8, 2025 |
+| 15 | 3Sum | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [15_3sum.py](solutions/15_3sum.py) | ❌ ❌ ❌ ✅ Accepted | Dec 6, 2025 |
+| 167 | Two Sum II - Input Array Is Sorted | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [167_two_sum_ii_input_array_is_sorted.py](solutions/167_two_sum_ii_input_array_is_sorted.py) | ❌ ❌ ❌ ❌ ✅ Accepted | Dec 5, 2025 |
+| 543 | Diameter of Binary Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [543_diameter_of_binary_tree.py](solutions/543_diameter_of_binary_tree.py) | ❌ ✅ Accepted | Dec 7, 2025 |
 
 
 ---
