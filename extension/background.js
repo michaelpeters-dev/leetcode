@@ -259,7 +259,7 @@ function parseReadme(content) {
     }
     if (inTable && headerPassed && line.startsWith('|')) {
       const parts = line.split('|').map(p => p.trim()).filter(p => p);
-      if (parts.length >= 5) {
+      if (parts.length >= 4) {
         const num = parseInt(parts[0]);
         if (!isNaN(num)) {
           // Extract difficulty from badge or text
@@ -270,7 +270,13 @@ function parseReadme(content) {
             difficulty = diffMatch[1].charAt(0).toUpperCase() + diffMatch[1].slice(1).toLowerCase();
           }
 
-          // Extract timestamp if present
+          // Extract status if present (column 5)
+          let status = 'Accepted';
+          if (parts.length >= 5) {
+            status = parts[4];
+          }
+
+          // Extract timestamp if present (column 6)
           let timestamp = null;
           if (parts.length >= 6) {
             timestamp = parts[5];
@@ -281,7 +287,7 @@ function parseReadme(content) {
             title: parts[1],
             difficulty: difficulty,
             file: parts[3],
-            status: parts[4],
+            status: status,
             timestamp: timestamp
           });
         }
@@ -321,24 +327,18 @@ function generateReadme(problems, username) {
 
 </div>
 
-My LeetCode solutions, automatically pushed by **GleetCode** Chrome Extension.
-
-## Progress
-
-${chart ? `<div align="center">\n\n${chart}\n\n</div>` : '_No progress data yet. Solve more problems!_'}
+My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension (Gleetcode).
 
 ## Solutions
 
-| # | Title | Difficulty | Solution | Status | Date |
-|:---:|:------|:----------:|:--------:|:------:|:----:|
+| # | Title | Difficulty | Solution |
+|:---:|:------|:----------:|:--------:|
 `;
 
   for (const problem of problems) {
     const diffBadge = getDifficultyBadge(problem.difficulty);
-    const statusEmoji = problem.status === 'Accepted' ? '✅' : '❌';
-    const dateStr = problem.timestamp ? new Date(problem.timestamp).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '-';
 
-    content += `| ${problem.number} | ${problem.title} | ${diffBadge} | ${problem.file} | ${statusEmoji} ${problem.status} | ${dateStr} |\n`;
+    content += `| ${problem.number} | ${problem.title} | ${diffBadge} | ${problem.file} |\n`;
   }
 
   content += `
