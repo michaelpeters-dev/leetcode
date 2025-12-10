@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-114-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-115-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-48-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-61-ffc01e?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-5-ff375f?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-6-ff375f?style=for-the-badge)
 
 </div>
 
@@ -23,6 +23,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 6 | Zigzag Conversion | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [6_zigzag_conversion.py](solutions/6_zigzag_conversion.py) |
 | 7 | Reverse Integer | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [7_reverse_integer.py](solutions/7_reverse_integer.py) |
 | 9 | Palindrome Number | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [9_palindrome_number.py](solutions/9_palindrome_number.py) |
+| 10 | Regular Expression Matching | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [10_regular_expression_matching.py](solutions/10_regular_expression_matching.py) |
 | 11 | Container With Most Water | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [11_container_with_most_water.py](solutions/11_container_with_most_water.py) |
 | 13 | Roman to Integer | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [13_roman_to_integer.py](solutions/13_roman_to_integer.py) |
 | 14 | Longest Common Prefix | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [14_longest_common_prefix.py](solutions/14_longest_common_prefix.py) |
