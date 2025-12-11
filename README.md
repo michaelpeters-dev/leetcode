@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-117-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-118-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-62-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-63-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-6-ff375f?style=for-the-badge)
 
 </div>
@@ -129,6 +129,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 707 | Design Linked List | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [707_design_linked_list.py](solutions/707_design_linked_list.py) |
 | 876 | Middle of the Linked List | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [876_middle_of_the_linked_list.py](solutions/876_middle_of_the_linked_list.py) |
 | 918 | Maximum Sum Circular Subarray | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [918_maximum_sum_circular_subarray.py](solutions/918_maximum_sum_circular_subarray.py) |
+| 994 | Rotting Oranges | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [994_rotting_oranges.py](solutions/994_rotting_oranges.py) |
 | 1143 | Longest Common Subsequence | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [1143_longest_common_subsequence.py](solutions/1143_longest_common_subsequence.py) |
 | 1448 | Count Good Nodes in Binary Tree | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [1448_count_good_nodes_in_binary_tree.py](solutions/1448_count_good_nodes_in_binary_tree.py) |
 | 1700 | Number of Students Unable to Eat Lunch | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [1700_number_of_students_unable_to_eat_lunch.py](solutions/1700_number_of_students_unable_to_eat_lunch.py) |
