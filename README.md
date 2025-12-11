@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-116-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-117-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-61-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-62-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-6-ff375f?style=for-the-badge)
 
 </div>
@@ -28,6 +28,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 13 | Roman to Integer | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [13_roman_to_integer.py](solutions/13_roman_to_integer.py) |
 | 14 | Longest Common Prefix | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [14_longest_common_prefix.py](solutions/14_longest_common_prefix.py) |
 | 15 | 3Sum | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [15_3sum.py](solutions/15_3sum.py) |
+| 17 | Letter Combinations of a Phone Number | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [17_letter_combinations_of_a_phone_number.py](solutions/17_letter_combinations_of_a_phone_number.py) |
 | 19 | Remove Nth Node From End of List | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [19_remove_nth_node_from_end_of_list.py](solutions/19_remove_nth_node_from_end_of_list.py) |
 | 20 | Valid Parentheses | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [20_valid_parentheses.py](solutions/20_valid_parentheses.py) |
 | 21 | Merge Two Sorted Lists | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [21_merge_two_sorted_lists.py](solutions/21_merge_two_sorted_lists.py) |
