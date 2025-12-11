@@ -6,19 +6,19 @@
 # Runtime: 0 ms
 # Memory: N/A
 
+class Solution:class Solution:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        def dfs(node):        def dfs(node):
             if not node:            if not node:
                 return 0                return 0
 
-            left = dfs(node.left)            left = dfs(node.left)
-            if left == -1:            if left == -1:
-                return -1                return -1
+            left_height = 1 + dfs(node.left)            left_height = 1 + dfs(node.left)
+            right_height = 1 + dfs(node.right)            right_height = 1 + dfs(node.right)
+        trace = [True]        trace = [True]
                         
-            right = dfs(node.right)            right = dfs(node.right)
-            if right == -1:            if right == -1:
-                return -1                return -1
+            if abs(left_height - right_height) > 1:            if abs(left_height - right_height) > 1:
+                trace[0] = False                trace[0] = False
                         
-            if abs(left - right) > 1:            if abs(left - right) > 1:
-                return -1                return -1
-                        
-            return 1 + max(left, right)            return 1 + max(left, right)
-        return dfs(root) != -1        return dfs(root) != -1
+            return max(left_height, right_height)            return max(left_height, right_height)
+        dfs(root)        dfs(root)
+        return trace[0]        return trace[0]
