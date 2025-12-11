@@ -2,8 +2,8 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-115-ffa116?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-48-00b8a3?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-116-ffa116?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-61-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-6-ff375f?style=for-the-badge)
 
@@ -61,6 +61,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 102 | Binary Tree Level Order Traversal | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [102_binary_tree_level_order_traversal.py](solutions/102_binary_tree_level_order_traversal.py) |
 | 104 | Maximum Depth of Binary Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [104_maximum_depth_of_binary_tree.py](solutions/104_maximum_depth_of_binary_tree.py) |
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [105_construct_binary_tree_from_preorder_and_inorder_traversal.py](solutions/105_construct_binary_tree_from_preorder_and_inorder_traversal.py) |
+| 110 | Balanced Binary Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [110_balanced_binary_tree.py](solutions/110_balanced_binary_tree.py) |
 | 112 | Path Sum | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [112_path_sum.py](solutions/112_path_sum.py) |
 | 121 | Best Time to Buy and Sell Stock | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [121_best_time_to_buy_and_sell_stock.py](solutions/121_best_time_to_buy_and_sell_stock.py) |
 | 124 | Binary Tree Maximum Path Sum | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [124_binary_tree_maximum_path_sum.py](solutions/124_binary_tree_maximum_path_sum.py) |
