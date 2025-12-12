@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-118-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-119-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-63-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-64-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-6-ff375f?style=for-the-badge)
 
 </div>
@@ -32,6 +32,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 19 | Remove Nth Node From End of List | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [19_remove_nth_node_from_end_of_list.py](solutions/19_remove_nth_node_from_end_of_list.py) |
 | 20 | Valid Parentheses | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [20_valid_parentheses.py](solutions/20_valid_parentheses.py) |
 | 21 | Merge Two Sorted Lists | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [21_merge_two_sorted_lists.py](solutions/21_merge_two_sorted_lists.py) |
+| 22 | Generate Parentheses | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [22_generate_parentheses.py](solutions/22_generate_parentheses.py) |
 | 23 | Merge k Sorted Lists | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [23_merge_k_sorted_lists.py](solutions/23_merge_k_sorted_lists.py) |
 | 26 | Remove Duplicates from Sorted Array | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [26_remove_duplicates_from_sorted_array.py](solutions/26_remove_duplicates_from_sorted_array.py) |
 | 27 | Remove Element | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [27_remove_element.py](solutions/27_remove_element.py) |
