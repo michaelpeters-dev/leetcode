@@ -3,22 +3,24 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/rotting-oranges/
 # Submission Status: Accepted
-# Runtime: 0 ms
+# Runtime: N/A
 # Memory: N/A
 
-            for i in range(len(q)):            for i in range(len(q)):
-                r, c = q.popleft()                r, c = q.popleft()
-                for dr, dc in directions:                for dr, dc in directions:
-                    row, col = dr + r, dc + c                    row, col = dr + r, dc + c
-                    # Check out of bounds, and if it can even be made rotten                    # Check out of bounds, and if it can even be made rotten
-                    if (row<0 or col<0) or (row==ROWS or col==COLS) or (grid[row][col] != 1):                    if (row<0 or col<0) or (row==ROWS or col==COLS) or (grid[row][col] != 1):
+
+        print(queue)        print(queue)
+        print(fresh)        print(fresh)
+
+        combinations = [[1, 0], [-1, 0], [0, -1], [0, 1]]        combinations = [[1, 0], [-1, 0], [0, -1], [0, 1]]
+        while queue and fresh>0:        while queue and fresh>0:
+            snap_shot = len(queue)            snap_shot = len(queue)
+            for _ in range(snap_shot):            for _ in range(snap_shot):
+                current = queue.popleft()                current = queue.popleft()
+                for combination in combinations:                for combination in combinations:
+                    nr, nc = current[0] + combination[0], current[1] + combination[1]                    nr, nc = current[0] + combination[0], current[1] + combination[1]
+                    if (nr<0 or nc<0) or (nr==ROWS or nc==COLS) or (grid[nr][nc]!=1):                    if (nr<0 or nc<0) or (nr==ROWS or nc==COLS) or (grid[nr][nc]!=1):
                         continue                        continue
-                    grid[row][col] = 2                    grid[row][col] = 2
-                    q.append([row, col])                    q.append([row, col])
+                    queue.append([nr, nc])                    queue.append([nr, nc])
+                    grid[nr][nc] = 2                    grid[nr][nc] = 2
                     fresh -= 1                    fresh -= 1
             time += 1            time += 1
-        return time if fresh==0 else - 1        return time if fresh==0 else - 1
-
-        while q and fresh > 0:        while q and fresh > 0:
-        directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]        directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
-                
+        return time if fresh==0 else -1        return time if fresh==0 else -1
