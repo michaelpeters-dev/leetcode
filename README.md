@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-119-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-120-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-64-ffc01e?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-6-ff375f?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-7-ff375f?style=for-the-badge)
 
 </div>
 
@@ -34,6 +34,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 21 | Merge Two Sorted Lists | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [21_merge_two_sorted_lists.py](solutions/21_merge_two_sorted_lists.py) |
 | 22 | Generate Parentheses | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [22_generate_parentheses.py](solutions/22_generate_parentheses.py) |
 | 23 | Merge k Sorted Lists | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [23_merge_k_sorted_lists.py](solutions/23_merge_k_sorted_lists.py) |
+| 25 | Reverse Nodes in k-Group | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [25_reverse_nodes_in_k_group.py](solutions/25_reverse_nodes_in_k_group.py) |
 | 26 | Remove Duplicates from Sorted Array | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [26_remove_duplicates_from_sorted_array.py](solutions/26_remove_duplicates_from_sorted_array.py) |
 | 27 | Remove Element | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [27_remove_element.py](solutions/27_remove_element.py) |
 | 28 | Find the Index of the First Occurrence in a String | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [28_find_the_index_of_the_first_occurrence_in_a_string.py](solutions/28_find_the_index_of_the_first_occurrence_in_a_string.py) |
