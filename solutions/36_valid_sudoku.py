@@ -6,21 +6,21 @@
 # Runtime: 0 ms
 # Memory: N/A
 
-                for j in range(c, c + 3):                for j in range(c, c + 3):
-                    if board[i][j]==".":                    if board[i][j]==".":
-                        continue                        continue
-                    if board[i][j] not in nums:                    if board[i][j] not in nums:
-                        nums.add(board[i][j])                        nums.add(board[i][j])
-                        continue                        continue
-                    return False                    return False
-            return True            return True
-                
-        for r in range(0, 9, 3):        for r in range(0, 9, 3):
-            for c in range(0, 8, 3):            for c in range(0, 8, 3):
-                if not checkSubsquare(r, c):                if not checkSubsquare(r, c):
-            for i in range(r, r + 3):            for i in range(r, r + 3):
-            nums = set()            nums = set()
-        def checkSubsquare(r, c):        def checkSubsquare(r, c):
+class Solution:class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        cols = collections.defaultdict(set)        cols = collections.defaultdict(set)
+        rows = collections.defaultdict(set)        rows = collections.defaultdict(set)
+        squares = collections.defaultdict(set) # key = (r/3, c/3)        squares = collections.defaultdict(set) # key = (r/3, c/3)
 
+        for r in range(9):        for r in range(9):
+            for c in range(9):            for c in range(9):
+                if board[r][c]==".":                if board[r][c]==".":
+                    continue                    continue
+                if (board[r][c] in rows[r] or                if (board[r][c] in rows[r] or
+                    board[r][c] in cols[c] or                    board[r][c] in cols[c] or
+                    board[r][c] in squares[(r//3, c//3)]):                    board[r][c] in squares[(r//3, c//3)]):
                     return False                    return False
+                rows[r].add(board[r][c])                rows[r].add(board[r][c])
+                cols[c].add(board[r][c])                cols[c].add(board[r][c])
+                squares[(r//3, c//3)].add(board[r][c])                squares[(r//3, c//3)].add(board[r][c])
         return True        return True
