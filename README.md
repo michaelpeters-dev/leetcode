@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-121-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-122-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-65-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-66-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-7-ff375f?style=for-the-badge)
 
 </div>
@@ -41,6 +41,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 33 | Search in Rotated Sorted Array | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [33_search_in_rotated_sorted_array.py](solutions/33_search_in_rotated_sorted_array.py) |
 | 35 | Search Insert Position | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [35_search_insert_position.py](solutions/35_search_insert_position.py) |
 | 36 | Valid Sudoku | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [36_valid_sudoku.py](solutions/36_valid_sudoku.py) |
+| 39 | Combination Sum | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [39_combination_sum.py](solutions/39_combination_sum.py) |
 | 46 | Permutations | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [46_permutations.py](solutions/46_permutations.py) |
 | 48 | Rotate Image | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [48_rotate_image.py](solutions/48_rotate_image.py) |
 | 49 | Group Anagrams | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [49_group_anagrams.py](solutions/49_group_anagrams.py) |
