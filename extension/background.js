@@ -70,7 +70,7 @@ async function getFileContent(username, path) {
   };
 }
 
-// Create or update file in repo
+// Create or update file in repo (single file)
 async function createOrUpdateFile(username, path, content, message, sha = null) {
   const body = {
     message: message,
@@ -100,6 +100,82 @@ async function createOrUpdateFile(username, path, content, message, sha = null) 
   }
 
   return result.data;
+}
+
+// Create a single commit with multiple files
+async function createMultiFileCommit(username, files, message) {
+  // Get the default branch reference
+  const refResult = await githubRequest(`/repos/${username}/${REPO_NAME}/git/ref/heads/main`);
+  if (!refResult.ok) {
+    throw new Error('Could not get branch reference');
+  }
+  const latestCommitSha = refResult.data.object.sha;
+
+  // Get the commit to find the tree
+  const commitResult = await githubRequest(`/repos/${username}/${REPO_NAME}/git/commits/${latestCommitSha}`);
+  if (!commitResult.ok) {
+    throw new Error('Could not get latest commit');
+  }
+  const baseTreeSha = commitResult.data.tree.sha;
+
+  // Create blobs for each file
+  const treeItems = [];
+  for (const file of files) {
+    const blobResult = await githubRequest(`/repos/${username}/${REPO_NAME}/git/blobs`, {
+      method: 'POST',
+      body: JSON.stringify({
+        content: file.content,
+        encoding: 'utf-8'
+      })
+    });
+    if (!blobResult.ok) {
+      throw new Error(`Could not create blob for ${file.path}`);
+    }
+    treeItems.push({
+      path: file.path,
+      mode: '100644',
+      type: 'blob',
+      sha: blobResult.data.sha
+    });
+  }
+
+  // Create a new tree
+  const treeResult = await githubRequest(`/repos/${username}/${REPO_NAME}/git/trees`, {
+    method: 'POST',
+    body: JSON.stringify({
+      base_tree: baseTreeSha,
+      tree: treeItems
+    })
+  });
+  if (!treeResult.ok) {
+    throw new Error('Could not create tree');
+  }
+
+  // Create the commit
+  const newCommitResult = await githubRequest(`/repos/${username}/${REPO_NAME}/git/commits`, {
+    method: 'POST',
+    body: JSON.stringify({
+      message: message,
+      tree: treeResult.data.sha,
+      parents: [latestCommitSha]
+    })
+  });
+  if (!newCommitResult.ok) {
+    throw new Error('Could not create commit');
+  }
+
+  // Update the branch reference
+  const updateRefResult = await githubRequest(`/repos/${username}/${REPO_NAME}/git/refs/heads/main`, {
+    method: 'PATCH',
+    body: JSON.stringify({
+      sha: newCommitResult.data.sha
+    })
+  });
+  if (!updateRefResult.ok) {
+    throw new Error('Could not update branch reference');
+  }
+
+  return newCommitResult.data;
 }
 
 // Format problem slug to filename
@@ -353,15 +429,13 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
   return content;
 }
 
-// Update README with new problem
-async function updateReadme(username, problemNumber, problemTitle, filepath, status, difficulty, timestamp) {
+// Generate updated README content with new problem
+async function generateUpdatedReadme(username, problemNumber, problemTitle, filepath, status, difficulty, timestamp) {
   let problems = [];
-  let existingSha = null;
 
   const existingReadme = await getFileContent(username, 'README.md');
   if (existingReadme) {
     problems = parseReadme(existingReadme.content);
-    existingSha = existingReadme.sha;
   }
 
   const existingIndex = problems.findIndex(p => p.number === parseInt(problemNumber));
@@ -386,15 +460,7 @@ async function updateReadme(username, problemNumber, problemTitle, filepath, sta
     problems.push(newProblem);
   }
 
-  const newReadmeContent = generateReadme(problems, username);
-
-  await createOrUpdateFile(
-    username,
-    'README.md',
-    newReadmeContent,
-    `Update README with ${problemNumber}. ${problemTitle}`,
-    existingSha
-  );
+  return generateReadme(problems, username);
 }
 
 // Main push function
@@ -417,11 +483,22 @@ async function pushSolution(data) {
   const fileContent = formatFileContent(data);
   const commitMessage = `${data.problemNumber}. ${data.problemTitle} (Python)`;
 
-  const existingFile = await getFileContent(username, filepath);
-  const sha = existingFile ? existingFile.sha : null;
+  // Generate the updated README content
+  const readmeContent = await generateUpdatedReadme(
+    username,
+    data.problemNumber,
+    data.problemTitle,
+    filepath,
+    data.status,
+    data.difficulty,
+    data.timestamp
+  );
 
-  await createOrUpdateFile(username, filepath, fileContent, commitMessage, sha);
-  await updateReadme(username, data.problemNumber, data.problemTitle, filepath, data.status, data.difficulty, data.timestamp);
+  // Create a single commit with both the solution and README
+  await createMultiFileCommit(username, [
+    { path: filepath, content: fileContent },
+    { path: 'README.md', content: readmeContent }
+  ], commitMessage);
 
   return { success: true };
 }
