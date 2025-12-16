@@ -3,23 +3,18 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/jump-game-ii/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: N/A
+# Runtime: 5222 ms
+# Memory: 18.59 MB
 
+class Solution:class Solution:
+    def jump(self, nums: List[int]) -> int:    def jump(self, nums: List[int]) -> int:
+        dp = [float('inf')] * (len(nums))        dp = [float('inf')] * (len(nums))
+        for i in range(len(nums)-2, -1, -1):        for i in range(len(nums)-2, -1, -1):
+                if i + j < len(nums):                if i + j < len(nums):
 
-        def dfs(i):        def dfs(i):
-            #Base Cases            #Base Cases
-            if i>=n-1:            if i>=n-1:
-                return 0                return 0
-            if nums[i]==0:            if nums[i]==0:
-                return float('inf')                return float('inf')
-            if i in memo:            if i in memo:
-                return memo[i]                return memo[i]
-                        
-            min_jumps = float('inf')            min_jumps = float('inf')
             for j in range(1, nums[i] + 1):            for j in range(1, nums[i] + 1):
-                min_jumps = min(min_jumps, 1 + dfs(i + j))                min_jumps = min(min_jumps, 1 + dfs(i + j))
+        return dp[0]        return dp[0]
+        dp[len(nums)-1] = 0        dp[len(nums)-1] = 0
 
-            memo[i] = min_jumps            memo[i] = min_jumps
-            return min_jumps            return min_jumps
-        return dfs(0)        return dfs(0)
+                    dp[i] = min(dp[i], 1 + dp[i + j])                    dp[i] = min(dp[i], 1 + dp[i + j])
+
