@@ -3,18 +3,19 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/jump-game-ii/
 # Submission Status: Accepted
-# Runtime: 5222 ms
-# Memory: 18.59 MB
+# Runtime: 12 ms
+# Memory: 18.44 MB
 
 class Solution:class Solution:
     def jump(self, nums: List[int]) -> int:    def jump(self, nums: List[int]) -> int:
-        dp = [float('inf')] * (len(nums))        dp = [float('inf')] * (len(nums))
-        for i in range(len(nums)-2, -1, -1):        for i in range(len(nums)-2, -1, -1):
-                if i + j < len(nums):                if i + j < len(nums):
-
-            for j in range(1, nums[i] + 1):            for j in range(1, nums[i] + 1):
-        return dp[0]        return dp[0]
-        dp[len(nums)-1] = 0        dp[len(nums)-1] = 0
-
-                    dp[i] = min(dp[i], 1 + dp[i + j])                    dp[i] = min(dp[i], 1 + dp[i + j])
-
+        res = 0        res = 0
+        l, r = 0, 0        l, r = 0, 0
+                
+        while r < len(nums) - 1:        while r < len(nums) - 1:
+            farthest = 0            farthest = 0
+            for i in range(l, r + 1):            for i in range(l, r + 1):
+                farthest = max(farthest, i + nums[i])                farthest = max(farthest, i + nums[i])
+            l = r + 1            l = r + 1
+            r = farthest            r = farthest
+            res += 1            res += 1
+        return res        return res
