@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-125-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-126-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-68-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-69-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-8-ff375f?style=for-the-badge)
 
 </div>
@@ -45,6 +45,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 40 | Combination Sum II | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [40_combination_sum_ii.py](solutions/40_combination_sum_ii.py) |
 | 42 | Trapping Rain Water | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [42_trapping_rain_water.py](solutions/42_trapping_rain_water.py) |
 | 43 | Multiply Strings | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [43_multiply_strings.py](solutions/43_multiply_strings.py) |
+| 45 | Jump Game II | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [45_jump_game_ii.py](solutions/45_jump_game_ii.py) |
 | 46 | Permutations | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [46_permutations.py](solutions/46_permutations.py) |
 | 48 | Rotate Image | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [48_rotate_image.py](solutions/48_rotate_image.py) |
 | 49 | Group Anagrams | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [49_group_anagrams.py](solutions/49_group_anagrams.py) |
