@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-127-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-128-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-70-ffc01e?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-8-ff375f?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-9-ff375f?style=for-the-badge)
 
 </div>
 
@@ -50,6 +50,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 48 | Rotate Image | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [48_rotate_image.py](solutions/48_rotate_image.py) |
 | 49 | Group Anagrams | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [49_group_anagrams.py](solutions/49_group_anagrams.py) |
 | 50 | Pow(x, n) | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [50_powx_n.py](solutions/50_powx_n.py) |
+| 51 | N-Queens | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [51_n_queens.py](solutions/51_n_queens.py) |
 | 53 | Maximum Subarray | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [53_maximum_subarray.py](solutions/53_maximum_subarray.py) |
 | 54 | Spiral Matrix | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [54_spiral_matrix.py](solutions/54_spiral_matrix.py) |
 | 55 | Jump Game | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [55_jump_game.py](solutions/55_jump_game.py) |
