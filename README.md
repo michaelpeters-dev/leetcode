@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-129-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-130-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-71-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-72-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-9-ff375f?style=for-the-badge)
 
 </div>
@@ -62,6 +62,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 66 | Plus One | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [66_plus_one.py](solutions/66_plus_one.py) |
 | 69 | Sqrt(x) | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [69_sqrtx.py](solutions/69_sqrtx.py) |
 | 70 | Climbing Stairs | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [70_climbing_stairs.py](solutions/70_climbing_stairs.py) |
+| 72 | Edit Distance | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [72_edit_distance.py](solutions/72_edit_distance.py) |
 | 77 | Combinations | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [77_combinations.py](solutions/77_combinations.py) |
 | 79 | Word Search | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [79_word_search.py](solutions/79_word_search.py) |
 | 83 | Remove Duplicates from Sorted List | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [83_remove_duplicates_from_sorted_list.py](solutions/83_remove_duplicates_from_sorted_list.py) |
