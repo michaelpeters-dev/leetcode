@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-128-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-129-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-70-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-71-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-9-ff375f?style=for-the-badge)
 
 </div>
@@ -128,6 +128,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 450 | Delete Node in a BST | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [450_delete_node_in_a_bst.py](solutions/450_delete_node_in_a_bst.py) |
 | 518 | Coin Change II | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [518_coin_change_ii.py](solutions/518_coin_change_ii.py) |
 | 543 | Diameter of Binary Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [543_diameter_of_binary_tree.py](solutions/543_diameter_of_binary_tree.py) |
+| 567 | Permutation in String | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [567_permutation_in_string.py](solutions/567_permutation_in_string.py) |
 | 572 | Subtree of Another Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [572_subtree_of_another_tree.py](solutions/572_subtree_of_another_tree.py) |
 | 647 | Palindromic Substrings | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [647_palindromic_substrings.py](solutions/647_palindromic_substrings.py) |
 | 655 | Print Binary Tree | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [655_print_binary_tree.py](solutions/655_print_binary_tree.py) |
