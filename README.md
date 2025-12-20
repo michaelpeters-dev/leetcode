@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-132-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-133-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-74-ffc01e?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-9-ff375f?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-10-ff375f?style=for-the-badge)
 
 </div>
 
@@ -68,6 +68,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 78 | Subsets | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [78_subsets.py](solutions/78_subsets.py) |
 | 79 | Word Search | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [79_word_search.py](solutions/79_word_search.py) |
 | 83 | Remove Duplicates from Sorted List | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [83_remove_duplicates_from_sorted_list.py](solutions/83_remove_duplicates_from_sorted_list.py) |
+| 84 | Largest Rectangle in Histogram | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [84_largest_rectangle_in_histogram.py](solutions/84_largest_rectangle_in_histogram.py) |
 | 91 | Decode Ways | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [91_decode_ways.py](solutions/91_decode_ways.py) |
 | 94 | Binary Tree Inorder Traversal | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [94_binary_tree_inorder_traversal.py](solutions/94_binary_tree_inorder_traversal.py) |
 | 98 | Validate Binary Search Tree | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [98_validate_binary_search_tree.py](solutions/98_validate_binary_search_tree.py) |
