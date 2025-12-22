@@ -2,8 +2,8 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-135-ffa116?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-49-00b8a3?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-136-ffa116?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-50-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-76-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-10-ff375f?style=for-the-badge)
 
@@ -84,6 +84,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 125 | Valid Palindrome | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [125_valid_palindrome.py](solutions/125_valid_palindrome.py) |
 | 128 | Longest Consecutive Sequence | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [128_longest_consecutive_sequence.py](solutions/128_longest_consecutive_sequence.py) |
 | 133 | Clone Graph | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [133_clone_graph.py](solutions/133_clone_graph.py) |
+| 136 | Single Number | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [136_single_number.py](solutions/136_single_number.py) |
 | 139 | Word Break | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [139_word_break.py](solutions/139_word_break.py) |
 | 141 | Linked List Cycle | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [141_linked_list_cycle.py](solutions/141_linked_list_cycle.py) |
 | 142 | Linked List Cycle II | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [142_linked_list_cycle_ii.py](solutions/142_linked_list_cycle_ii.py) |
