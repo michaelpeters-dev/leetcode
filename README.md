@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-138-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-139-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-51-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-77-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-78-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-10-ff375f?style=for-the-badge)
 
 </div>
@@ -137,6 +137,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 543 | Diameter of Binary Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [543_diameter_of_binary_tree.py](solutions/543_diameter_of_binary_tree.py) |
 | 567 | Permutation in String | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [567_permutation_in_string.py](solutions/567_permutation_in_string.py) |
 | 572 | Subtree of Another Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [572_subtree_of_another_tree.py](solutions/572_subtree_of_another_tree.py) |
+| 621 | Task Scheduler | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [621_task_scheduler.py](solutions/621_task_scheduler.py) |
 | 647 | Palindromic Substrings | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [647_palindromic_substrings.py](solutions/647_palindromic_substrings.py) |
 | 655 | Print Binary Tree | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [655_print_binary_tree.py](solutions/655_print_binary_tree.py) |
 | 695 | Max Area of Island | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [695_max_area_of_island.py](solutions/695_max_area_of_island.py) |
