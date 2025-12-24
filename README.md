@@ -2,8 +2,8 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-137-ffa116?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-50-00b8a3?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-138-ffa116?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-51-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-77-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-10-ff375f?style=for-the-badge)
 
@@ -148,6 +148,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 876 | Middle of the Linked List | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [876_middle_of_the_linked_list.py](solutions/876_middle_of_the_linked_list.py) |
 | 918 | Maximum Sum Circular Subarray | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [918_maximum_sum_circular_subarray.py](solutions/918_maximum_sum_circular_subarray.py) |
 | 994 | Rotting Oranges | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [994_rotting_oranges.py](solutions/994_rotting_oranges.py) |
+| 1046 | Last Stone Weight | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [1046_last_stone_weight.py](solutions/1046_last_stone_weight.py) |
 | 1143 | Longest Common Subsequence | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [1143_longest_common_subsequence.py](solutions/1143_longest_common_subsequence.py) |
 | 1448 | Count Good Nodes in Binary Tree | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [1448_count_good_nodes_in_binary_tree.py](solutions/1448_count_good_nodes_in_binary_tree.py) |
 | 1700 | Number of Students Unable to Eat Lunch | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [1700_number_of_students_unable_to_eat_lunch.py](solutions/1700_number_of_students_unable_to_eat_lunch.py) |
