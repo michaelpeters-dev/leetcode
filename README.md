@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-139-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-140-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-51-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-78-ffc01e?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-10-ff375f?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-11-ff375f?style=for-the-badge)
 
 </div>
 
@@ -80,6 +80,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [105_construct_binary_tree_from_preorder_and_inorder_traversal.py](solutions/105_construct_binary_tree_from_preorder_and_inorder_traversal.py) |
 | 110 | Balanced Binary Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [110_balanced_binary_tree.py](solutions/110_balanced_binary_tree.py) |
 | 112 | Path Sum | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [112_path_sum.py](solutions/112_path_sum.py) |
+| 115 | Distinct Subsequences | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [115_distinct_subsequences.py](solutions/115_distinct_subsequences.py) |
 | 121 | Best Time to Buy and Sell Stock | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [121_best_time_to_buy_and_sell_stock.py](solutions/121_best_time_to_buy_and_sell_stock.py) |
 | 124 | Binary Tree Maximum Path Sum | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [124_binary_tree_maximum_path_sum.py](solutions/124_binary_tree_maximum_path_sum.py) |
 | 125 | Valid Palindrome | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [125_valid_palindrome.py](solutions/125_valid_palindrome.py) |
