@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-140-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-141-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-51-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-78-ffc01e?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-11-ff375f?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-12-ff375f?style=for-the-badge)
 
 </div>
 
@@ -84,6 +84,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 121 | Best Time to Buy and Sell Stock | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [121_best_time_to_buy_and_sell_stock.py](solutions/121_best_time_to_buy_and_sell_stock.py) |
 | 124 | Binary Tree Maximum Path Sum | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [124_binary_tree_maximum_path_sum.py](solutions/124_binary_tree_maximum_path_sum.py) |
 | 125 | Valid Palindrome | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [125_valid_palindrome.py](solutions/125_valid_palindrome.py) |
+| 127 | Word Ladder | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [127_word_ladder.py](solutions/127_word_ladder.py) |
 | 128 | Longest Consecutive Sequence | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [128_longest_consecutive_sequence.py](solutions/128_longest_consecutive_sequence.py) |
 | 133 | Clone Graph | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [133_clone_graph.py](solutions/133_clone_graph.py) |
 | 136 | Single Number | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [136_single_number.py](solutions/136_single_number.py) |
