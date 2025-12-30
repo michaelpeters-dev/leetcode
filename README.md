@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-145-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-146-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-51-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-82-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-83-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-12-ff375f?style=for-the-badge)
 
 </div>
@@ -97,6 +97,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 142 | Linked List Cycle II | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [142_linked_list_cycle_ii.py](solutions/142_linked_list_cycle_ii.py) |
 | 143 | Reorder List | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [143_reorder_list.py](solutions/143_reorder_list.py) |
 | 144 | Binary Tree Preorder Traversal | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [144_binary_tree_preorder_traversal.py](solutions/144_binary_tree_preorder_traversal.py) |
+| 146 | LRU Cache | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [146_lru_cache.py](solutions/146_lru_cache.py) |
 | 152 | Maximum Product Subarray | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [152_maximum_product_subarray.py](solutions/152_maximum_product_subarray.py) |
 | 153 | Find Minimum in Rotated Sorted Array | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [153_find_minimum_in_rotated_sorted_array.py](solutions/153_find_minimum_in_rotated_sorted_array.py) |
 | 160 | Intersection of Two Linked Lists | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [160_intersection_of_two_linked_lists.py](solutions/160_intersection_of_two_linked_lists.py) |
