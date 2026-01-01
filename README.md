@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-147-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-148-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-51-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-84-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-85-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-12-ff375f?style=for-the-badge)
 
 </div>
@@ -101,6 +101,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 150 | Evaluate Reverse Polish Notation | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [150_evaluate_reverse_polish_notation.py](solutions/150_evaluate_reverse_polish_notation.py) |
 | 152 | Maximum Product Subarray | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [152_maximum_product_subarray.py](solutions/152_maximum_product_subarray.py) |
 | 153 | Find Minimum in Rotated Sorted Array | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [153_find_minimum_in_rotated_sorted_array.py](solutions/153_find_minimum_in_rotated_sorted_array.py) |
+| 155 | Min Stack | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [155_min_stack.py](solutions/155_min_stack.py) |
 | 160 | Intersection of Two Linked Lists | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [160_intersection_of_two_linked_lists.py](solutions/160_intersection_of_two_linked_lists.py) |
 | 167 | Two Sum II - Input Array Is Sorted | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [167_two_sum_ii_input_array_is_sorted.py](solutions/167_two_sum_ii_input_array_is_sorted.py) |
 | 190 | Reverse Bits | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [190_reverse_bits.py](solutions/190_reverse_bits.py) |
