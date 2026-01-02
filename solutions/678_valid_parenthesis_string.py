@@ -3,8 +3,8 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/valid-parenthesis-string/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: N/A
+# Runtime: 9 ms
+# Memory: 18.08 MB
 
                         
             if s[i]=="(":            if s[i]=="(":
