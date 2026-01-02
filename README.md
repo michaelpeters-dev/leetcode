@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-148-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-149-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-51-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-85-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-86-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-12-ff375f?style=for-the-badge)
 
 </div>
@@ -149,6 +149,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 621 | Task Scheduler | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [621_task_scheduler.py](solutions/621_task_scheduler.py) |
 | 647 | Palindromic Substrings | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [647_palindromic_substrings.py](solutions/647_palindromic_substrings.py) |
 | 655 | Print Binary Tree | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [655_print_binary_tree.py](solutions/655_print_binary_tree.py) |
+| 678 | Valid Parenthesis String | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [678_valid_parenthesis_string.py](solutions/678_valid_parenthesis_string.py) |
 | 695 | Max Area of Island | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [695_max_area_of_island.py](solutions/695_max_area_of_island.py) |
 | 697 | Degree of an Array | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [697_degree_of_an_array.py](solutions/697_degree_of_an_array.py) |
 | 700 | Search in a Binary Search Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [700_search_in_a_binary_search_tree.py](solutions/700_search_in_a_binary_search_tree.py) |
