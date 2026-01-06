@@ -2,8 +2,8 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-152-ffa116?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-51-00b8a3?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-153-ffa116?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-52-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-89-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-12-ff375f?style=for-the-badge)
 
@@ -109,6 +109,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 198 | House Robber | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [198_house_robber.py](solutions/198_house_robber.py) |
 | 199 | Binary Tree Right Side View | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [199_binary_tree_right_side_view.py](solutions/199_binary_tree_right_side_view.py) |
 | 200 | Number of Islands | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [200_number_of_islands.py](solutions/200_number_of_islands.py) |
+| 202 | Happy Number | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [202_happy_number.py](solutions/202_happy_number.py) |
 | 203 | Remove Linked List Elements | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [203_remove_linked_list_elements.py](solutions/203_remove_linked_list_elements.py) |
 | 206 | Reverse Linked List | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [206_reverse_linked_list.py](solutions/206_reverse_linked_list.py) |
 | 207 | Course Schedule | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [207_course_schedule.py](solutions/207_course_schedule.py) |
