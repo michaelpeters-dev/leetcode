@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-156-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-157-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-54-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-90-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-91-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-12-ff375f?style=for-the-badge)
 
 </div>
@@ -115,6 +115,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 207 | Course Schedule | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [207_course_schedule.py](solutions/207_course_schedule.py) |
 | 208 | Implement Trie (Prefix Tree) | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [208_implement_trie_prefix_tree.py](solutions/208_implement_trie_prefix_tree.py) |
 | 209 | Minimum Size Subarray Sum | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [209_minimum_size_subarray_sum.py](solutions/209_minimum_size_subarray_sum.py) |
+| 210 | Course Schedule II | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [210_course_schedule_ii.py](solutions/210_course_schedule_ii.py) |
 | 211 | Design Add and Search Words Data Structure | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [211_design_add_and_search_words_data_structure.py](solutions/211_design_add_and_search_words_data_structure.py) |
 | 212 | Word Search II | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [212_word_search_ii.py](solutions/212_word_search_ii.py) |
 | 213 | House Robber II | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [213_house_robber_ii.py](solutions/213_house_robber_ii.py) |
