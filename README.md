@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-157-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-158-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-54-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-91-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-92-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-12-ff375f?style=for-the-badge)
 
 </div>
@@ -119,6 +119,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 211 | Design Add and Search Words Data Structure | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [211_design_add_and_search_words_data_structure.py](solutions/211_design_add_and_search_words_data_structure.py) |
 | 212 | Word Search II | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [212_word_search_ii.py](solutions/212_word_search_ii.py) |
 | 213 | House Robber II | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [213_house_robber_ii.py](solutions/213_house_robber_ii.py) |
+| 215 | Kth Largest Element in an Array | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [215_kth_largest_element_in_an_array.py](solutions/215_kth_largest_element_in_an_array.py) |
 | 217 | Contains Duplicate | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [217_contains_duplicate.py](solutions/217_contains_duplicate.py) |
 | 219 | Contains Duplicate II | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [219_contains_duplicate_ii.py](solutions/219_contains_duplicate_ii.py) |
 | 225 | Implement Stack using Queues | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [225_implement_stack_using_queues.py](solutions/225_implement_stack_using_queues.py) |
