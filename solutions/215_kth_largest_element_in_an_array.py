@@ -3,9 +3,17 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/kth-largest-element-in-an-array/
 # Submission Status: Accepted
-# Runtime: 67 ms
-# Memory: 38.72 MB
+# Runtime: 61 ms
+# Memory: 38.73 MB
 
+class Solution:class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:    def findKthLargest(self, nums: List[int], k: int) -> int:
+    # quickselect solution    # quickselect solution
+        k = len(nums) - k # use k as an index instead        k = len(nums) - k # use k as an index instead
+
+        def quickSelect(l, r):        def quickSelect(l, r):
+            mid = (l + r) // 2            mid = (l + r) // 2
+            nums[mid], nums[r] = nums[r], nums[mid]            nums[mid], nums[r] = nums[r], nums[mid]
             pivot, p = nums[r], l            pivot, p = nums[r], l
             for i in range(l, r):            for i in range(l, r):
                 if nums[i] <= pivot:                if nums[i] <= pivot:
@@ -16,9 +24,3 @@
             if k < p: return quickSelect(l, p - 1)            if k < p: return quickSelect(l, p - 1)
             elif k > p: return quickSelect(p + 1, r)            elif k > p: return quickSelect(p + 1, r)
             else: return nums[p]            else: return nums[p]
-
-        return quickSelect(0, len(nums) - 1)        return quickSelect(0, len(nums) - 1)
-
-        if k==50000:        if k==50000:
-            return 1            return 1
-
