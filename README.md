@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-159-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-160-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-54-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-93-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-94-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-12-ff375f?style=for-the-badge)
 
 </div>
@@ -163,6 +163,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 704 | Binary Search | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [704_binary_search.py](solutions/704_binary_search.py) |
 | 707 | Design Linked List | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [707_design_linked_list.py](solutions/707_design_linked_list.py) |
 | 739 | Daily Temperatures | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [739_daily_temperatures.py](solutions/739_daily_temperatures.py) |
+| 743 | Network Delay Time | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [743_network_delay_time.py](solutions/743_network_delay_time.py) |
 | 746 | Min Cost Climbing Stairs | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [746_min_cost_climbing_stairs.py](solutions/746_min_cost_climbing_stairs.py) |
 | 876 | Middle of the Linked List | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [876_middle_of_the_linked_list.py](solutions/876_middle_of_the_linked_list.py) |
 | 918 | Maximum Sum Circular Subarray | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [918_maximum_sum_circular_subarray.py](solutions/918_maximum_sum_circular_subarray.py) |
