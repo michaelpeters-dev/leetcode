@@ -3,20 +3,22 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/product-of-array-except-self/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: N/A
+# Runtime: 23 ms
+# Memory: 25.68 MB
 
-        for i in range(1, len(nums)):        for i in range(1, len(nums)):
-            left[i] = left[i - 1] * nums[i - 1]            left[i] = left[i - 1] * nums[i - 1]
-        print(left)        print(left)
+    def productExceptSelf(self, nums: List[int]) -> List[int]:    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        prevL = 1        prevL = 1
+        prevR = 1        prevR = 1
+        res = [1] * len(nums)        res = [1] * len(nums)
 
-        for i in range(len(nums) - 2, 0, -1):        for i in range(len(nums) - 2, 0, -1):
-            right[i] = right[i + 1]  * nums[i + 1]            right[i] = right[i + 1]  * nums[i + 1]
-        print(right)        print(right)
-
-        res = [1] * (len(nums) - 2)        res = [1] * (len(nums) - 2)
-        for i in range(1, len(nums)-1):        for i in range(1, len(nums)-1):
-            res[i-1] = left[i] * right[i]            res[i-1] = left[i] * right[i]
-        print(res)        print(res)
+        L = 0        L = 0
+        R = len(nums) - 1        R = len(nums) - 1
+        while L<len(nums):        while L<len(nums):
+            res[L] *= prevL            res[L] *= prevL
+            res[R] *= prevR            res[R] *= prevR
+            prevL = nums[L] * prevL            prevL = nums[L] * prevL
+            prevR = nums[R] * prevR            prevR = nums[R] * prevR
+                        
+            L += 1            L += 1
+            R -= 1            R -= 1
         return res        return res
-
