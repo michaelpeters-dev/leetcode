@@ -4,7 +4,7 @@
 # URL: https://leetcode.com/problems/two-sum/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: 13.15 MB
+# Memory: 13.04 MB
 
 class Solution(object):class Solution(object):
     def twoSum(self, nums, target):    def twoSum(self, nums, target):
