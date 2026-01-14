@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-161-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-162-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-54-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-95-ffc01e?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-12-ff375f?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-13-ff375f?style=for-the-badge)
 
 </div>
 
@@ -130,6 +130,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 235 | Lowest Common Ancestor of a Binary Search Tree | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [235_lowest_common_ancestor_of_a_binary_search_tree.py](solutions/235_lowest_common_ancestor_of_a_binary_search_tree.py) |
 | 237 | Delete Node in a Linked List | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [237_delete_node_in_a_linked_list.py](solutions/237_delete_node_in_a_linked_list.py) |
 | 238 | Product of Array Except Self | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [238_product_of_array_except_self.py](solutions/238_product_of_array_except_self.py) |
+| 239 | Sliding Window Maximum | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [239_sliding_window_maximum.py](solutions/239_sliding_window_maximum.py) |
 | 242 | Valid Anagram | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [242_valid_anagram.py](solutions/242_valid_anagram.py) |
 | 268 | Missing Number | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [268_missing_number.py](solutions/268_missing_number.py) |
 | 278 | First Bad Version | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [278_first_bad_version.py](solutions/278_first_bad_version.py) |
