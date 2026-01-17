@@ -3,7 +3,7 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/two-sum/
 # Submission Status: Accepted
-# Runtime: 3 ms
+# Runtime: 0 ms
 # Memory: 13.16 MB
 
 class Solution(object):class Solution(object):
@@ -20,4 +20,3 @@ class Solution(object):class Solution(object):
             else:            else:
                 dictionary[num] = index                dictionary[num] = index
       
-                
