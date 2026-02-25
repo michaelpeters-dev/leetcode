@@ -3,32 +3,21 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/valid-anagram/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 2 ms
+# Memory: 9.89 MB
 
-class Solution(object):
-    def isAnagram(self, s, t):
-        """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
-        if len(s)!=len(t):
-            return False
+        unordered_map<char, int> second;        unordered_map<char, int> second;
 
-        s_dict = {}
-        t_dict = {}
+        for (int i = 0; i < n; i++) {        for (int i = 0; i < n; i++) {
+        int n = s.size();        int n = s.size();
+            first[s[i]] += 1;            first[s[i]] += 1;
+        }        }
+            second[t[i]] += 1;            second[t[i]] += 1;
+        unordered_map<char, int> first;        unordered_map<char, int> first;
 
-        for i in range(len(s)):
-            if s[i] in s_dict:
-                s_dict[s[i]] += 1
-            else:
-                s_dict[s[i]] = 1
-            if t[i] in t_dict:
-                t_dict[t[i]] += 1
-            else:
-                t_dict[t[i]] = 1
-        if s_dict==t_dict:
-            return True
-        else:
-            return False
+        }        }
+    bool isAnagram(string s, string t) {    bool isAnagram(string s, string t) {
+        if (s.size() != t.size()) {        if (s.size() != t.size()) {
+            return false;            return false;
+public:public:
+class Solution {class Solution {
