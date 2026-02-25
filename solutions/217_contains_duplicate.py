@@ -3,19 +3,20 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/contains-duplicate/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 43 ms
+# Memory: 90.83 MB
 
-class Solution(object):
-    def containsDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
-        store = set()
-        for num in nums:
-            if num in store:
-                return True
-            else:
-                store.add(num)
-        return False
+class Solution {class Solution {
+public:public:
+    bool containsDuplicate(vector<int>& nums) {    bool containsDuplicate(vector<int>& nums) {
+        unordered_set<int> store;        unordered_set<int> store;
+        for (auto num: nums) {        for (auto num: nums) {
+            if (store.count(num)) {            if (store.count(num)) {
+                return true;                return true;
+            } else {            } else {
+        }        }
+                store.insert(num);                store.insert(num);
+            }            }
+    }    }
+        return false;        return false;
+};};
