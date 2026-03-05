@@ -3,20 +3,19 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/contains-duplicate/
 # Submission Status: Accepted
-# Runtime: 43 ms
-# Memory: 90.83 MB
+# Runtime: 0 ms
+# Memory: N/A
 
 class Solution {class Solution {
 public:public:
     bool containsDuplicate(vector<int>& nums) {    bool containsDuplicate(vector<int>& nums) {
         unordered_set<int> store;        unordered_set<int> store;
         for (auto num: nums) {        for (auto num: nums) {
-            if (store.count(num)) {            if (store.count(num)) {
+            if (store.count(num) > 0) {            if (store.count(num) > 0) {
                 return true;                return true;
-            } else {            } else {
-        }        }
-                store.insert(num);                store.insert(num);
             }            }
+        }        }
     }    }
+            store.insert(num);            store.insert(num);
         return false;        return false;
 };};
