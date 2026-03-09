@@ -3,16 +3,21 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/validate-binary-search-tree/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 21.98 MB
 
-class Solution:
-    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+class Solution {class Solution {
+public:public:
+    bool isValidBST(TreeNode* root) {    bool isValidBST(TreeNode* root) {
+    }    }
+ */ */
+    bool isValidH(TreeNode* root, long left, long right) {    bool isValidH(TreeNode* root, long left, long right) {
+        if (root == NULL) {        if (root == NULL) {
+            return true;            return true;
+        }        }
 
-        def valid(node, left, right):
-            if not node:
-                return True
-            if not(node.val < right and node.val > left):
-                return False
-            return valid(node.left, left, node.val) and valid(node.right, node.val, right)
-        return valid(root, float("-inf"), float("inf"))
+        if (root->val >= right || root->val <= left) return false;        if (root->val >= right || root->val <= left) return false;
+        return isValidH(root->left, left, root->val) && isValidH(root->right, root->val, right);        return isValidH(root->left, left, root->val) && isValidH(root->right, root->val, right);
+    }    }
+        return isValidH(root, LONG_MIN, LONG_MAX);        return isValidH(root, LONG_MIN, LONG_MAX);
+};};
