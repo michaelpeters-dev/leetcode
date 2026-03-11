@@ -2,8 +2,8 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-163-ffa116?style=for-the-badge)
-![Easy](https://img.shields.io/badge/Easy-54-00b8a3?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-164-ffa116?style=for-the-badge)
+![Easy](https://img.shields.io/badge/Easy-55-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-95-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-14-ff375f?style=for-the-badge)
 
@@ -75,6 +75,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 97 | Interleaving String | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [97_interleaving_string.py](solutions/97_interleaving_string.py) |
 | 98 | Validate Binary Search Tree | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [98_validate_binary_search_tree.py](solutions/98_validate_binary_search_tree.py) |
 | 100 | Same Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [100_same_tree.py](solutions/100_same_tree.py) |
+| 101 | Symmetric Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [101_symmetric_tree.py](solutions/101_symmetric_tree.py) |
 | 102 | Binary Tree Level Order Traversal | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [102_binary_tree_level_order_traversal.py](solutions/102_binary_tree_level_order_traversal.py) |
 | 104 | Maximum Depth of Binary Tree | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [104_maximum_depth_of_binary_tree.py](solutions/104_maximum_depth_of_binary_tree.py) |
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [105_construct_binary_tree_from_preorder_and_inorder_traversal.py](solutions/105_construct_binary_tree_from_preorder_and_inorder_traversal.py) |
