@@ -4,19 +4,19 @@
 # URL: https://leetcode.com/problems/two-sum/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: 14.74 MB
+# Memory: 12.96 MB
 
-class Solution {class Solution {
-public:public:
-    vector<int> twoSum(vector<int>& nums, int target) {    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> store;        unordered_map<int, int> store;
+class Solution(object):class Solution(object):
+    def twoSum(self, nums, target):    def twoSum(self, nums, target):
+        """        """
+        :type nums: List[int]        :type nums: List[int]
+        :type target: int        :type target: int
+        :rtype: List[int]        :rtype: List[int]
+        """        """
+        store = {}        store = {}
 
-        for (int i = 0; i < nums.size(); i++) {        for (int i = 0; i < nums.size(); i++) {
-            int offset = target - nums[i];            int offset = target - nums[i];
-        }        }
-            if (store.count(offset)) {            if (store.count(offset)) {
-                return {store[offset], i};                return {store[offset], i};
-            }            }
-    }    }
-            store[nums[i]] = i;            store[nums[i]] = i;
-        return {};        return {};
+        for index, num in enumerate(nums):        for index, num in enumerate(nums):
+            if target - num in store:            if target - num in store:
+                return [store[target - num], index]                return [store[target - num], index]
+            else:            else:
+                store[num] = index                store[num] = index
