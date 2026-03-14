@@ -3,24 +3,26 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/valid-sudoku/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: N/A
+# Runtime: 11 ms
+# Memory: 12.50 MB
 
-class Solution:class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:    def isValidSudoku(self, board: List[List[str]]) -> bool:
-        cols = collections.defaultdict(set)        cols = collections.defaultdict(set)
-        rows = collections.defaultdict(set)        rows = collections.defaultdict(set)
-        squares = collections.defaultdict(set) # key = (r/3, c/3)        squares = collections.defaultdict(set) # key = (r/3, c/3)
+        """        """
+        :type board: List[List[str]]        :type board: List[List[str]]
+        :rtype: bool        :rtype: bool
+        """        """
+        row = {i: set() for i in range(9)}        row = {i: set() for i in range(9)}
+        col = {i: set() for i in range(9)}        col = {i: set() for i in range(9)}
+        box = {(i, j): set() for i in range(3) for j in range(3)}        box = {(i, j): set() for i in range(3) for j in range(3)}
 
-        for r in range(9):        for r in range(9):
-            for c in range(9):            for c in range(9):
-                if board[r][c]==".":                if board[r][c]==".":
-                    continue                    continue
-                if (board[r][c] in rows[r] or                if (board[r][c] in rows[r] or
-                    board[r][c] in cols[c] or                    board[r][c] in cols[c] or
-                    board[r][c] in squares[(r//3, c//3)]):                    board[r][c] in squares[(r//3, c//3)]):
+        for rowcount in range(9):        for rowcount in range(9):
+            for colcount in range(9):            for colcount in range(9):
+                num = board[rowcount][colcount]                num = board[rowcount][colcount]
+                row[rowcount].add(num)                row[rowcount].add(num)
+                col[colcount].add(num)                col[colcount].add(num)
+                box[(rowcount//3, colcount//3)].add(num)                box[(rowcount//3, colcount//3)].add(num)
+                if num in row[rowcount] or num in col[colcount] or num in box[(rowcount//3, colcount//3)]:                if num in row[rowcount] or num in col[colcount] or num in box[(rowcount//3, colcount//3)]:
                     return False                    return False
-                rows[r].add(board[r][c])                rows[r].add(board[r][c])
-                cols[c].add(board[r][c])                cols[c].add(board[r][c])
-                squares[(r//3, c//3)].add(board[r][c])                squares[(r//3, c//3)].add(board[r][c])
+
+                if num==".":                if num==".":
+                    continue                    continue
         return True        return True
