@@ -3,19 +3,27 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/longest-consecutive-sequence/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 86 ms
+# Memory: 26.80 MB
 
-class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
-        numSet = set(nums)
-        longest = 0
+        """        """
+        :type nums: List[int]        :type nums: List[int]
+        :rtype: int        :rtype: int
+        """        """
+        store = set()        store = set()
 
-        for n in numSet:
-            # check if its the start of a sequence
-            if (n-1) not in numSet:
-                length = 0
-                while (n + length) in numSet:
-                    length += 1
-                    longest = max(longest, length)
-        return longest
+        for num in nums:        for num in nums:
+            store.add(num)            store.add(num)
+                
+        for num in store:        for num in store:
+            if num-1 in store:            if num-1 in store:
+                continue                continue
+            else:            else:
+        largest = 0        largest = 0
+            temp = 0            temp = 0
+                while num in store:                while num in store:
+                    temp += 1                    temp += 1
+                    num += 1                    num += 1
+                    largest = max(largest, temp)                    largest = max(largest, temp)
+        return largest        return largest
+                
