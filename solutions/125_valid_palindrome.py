@@ -3,30 +3,30 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/valid-palindrome/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 9.98 MB
 
-class Solution(object):
-    def isPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        n = len(s)
-        L = 0
-        R = n - 1
-        letters = "abcdefghijklmnopqrstuvwxyz0123456789"
-        while L<R:
-            print(s[L], s[R])
-            if s[L].lower() not in letters:
-                L += 1
-                continue
-            elif s[R].lower() not in letters:
-                R -= 1
-                continue
+        int R = s.size() - 1;        int R = s.size() - 1;
+        int L = 0;        int L = 0;
+        while (L <= R) {        while (L <= R) {
+            if (!isalnum(s[L])) {            if (!isalnum(s[L])) {
+                L++;                L++;
+            }            }
+                continue;                continue;
+            if (!isalnum(s[R])) {            if (!isalnum(s[R])) {
+                R--;                R--;
+                continue;                continue;
+            }            }
 
-            if s[L].lower()!=s[R].lower():
-                return False
-            L += 1
-            R -= 1
-        return True
+            if (toupper(s[L]) != toupper(s[R])) {            if (toupper(s[L]) != toupper(s[R])) {
+            }            }
+        }        }
+            L++;            L++;
+            R--;            R--;
+                return false;                return false;
+class Solution {class Solution {
+public:public:
+    bool isPalindrome(string s) {    bool isPalindrome(string s) {
+        return true;        return true;
+    }    }
+};};
