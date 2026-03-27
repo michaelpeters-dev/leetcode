@@ -3,21 +3,34 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/3sum/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: N/A
+# Runtime: 48 ms
+# Memory: 28.99 MB
 
-                continue                continue
-                        
-            l, r = i + 1, len(nums)-1            l, r = i + 1, len(nums)-1
-            while l < r:            while l < r:
-                threeSum = a + nums[l] + nums[r]                threeSum = a + nums[l] + nums[r]
-                if threeSum > 0:                if threeSum > 0:
-                    r -= 1                    r -= 1
-                elif threeSum < 0:                elif threeSum < 0:
-                    l += 1                    l += 1
-                else:                else:
-                    res.append([a, nums[l], nums[r]])                    res.append([a, nums[l], nums[r]])
-                    l += 1                    l += 1
-                    while nums[l]==nums[l-1] and l<r:                    while nums[l]==nums[l-1] and l<r:
-                        l += 1                        l += 1
-        return res        return res
+                    ans.push_back({nums[p], nums[l], nums[r]});                    ans.push_back({nums[p], nums[l], nums[r]});
+                    l++;                    l++;
+                    r--;                    r--;
+
+                    while (l < r && nums[l]==nums[l-1]) l++;                    while (l < r && nums[l]==nums[l-1]) l++;
+                    while (l < r && nums[r]==nums[r+1]) r--;                    while (l < r && nums[r]==nums[r+1]) r--;
+                } else {                } else {
+                } else if (sum < 0) {                } else if (sum < 0) {
+                    l++;                    l++;
+                if (sum > 0) {                if (sum > 0) {
+                    r--;                    r--;
+            while (l < r) {            while (l < r) {
+                int sum = nums[l] + nums[r] + nums[p];                int sum = nums[l] + nums[r] + nums[p];
+
+            int r = n - 1;            int r = n - 1;
+            int l = p + 1;            int l = p + 1;
+                }                }
+            }            }
+        }        }
+        return ans;        return ans;
+    }    }
+};};
+
+        for (int p = 0; p < n; p++) {        for (int p = 0; p < n; p++) {
+            if (p>0 && nums[p]==nums[p-1]) continue;            if (p>0 && nums[p]==nums[p-1]) continue;
+
+        sort(nums.begin(), nums.end());        sort(nums.begin(), nums.end());
+        vector<vector<int>> ans;        vector<vector<int>> ans;
