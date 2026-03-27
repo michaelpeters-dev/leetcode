@@ -4,21 +4,29 @@
 # URL: https://leetcode.com/problems/trapping-rain-water/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: 19.51 MB
+# Memory: N/A
 
-            return 0            return 0
-                
-        l, r = 0, len(height)-1        l, r = 0, len(height)-1
-        leftMax, rightMax = height[l], height[r]        leftMax, rightMax = height[l], height[r]
-        res = 0        res = 0
+            return 0;            return 0;
+        }        }
 
-        while l<r:        while l<r:
-            if leftMax < rightMax:            if leftMax < rightMax:
-                l += 1                l += 1
-            else:            else:
-                leftMax = max(leftMax, height[l])                leftMax = max(leftMax, height[l])
-                r -= 1                r -= 1
-                res += leftMax - height[l]                res += leftMax - height[l]
-                rightMax = max(rightMax, height[r])                rightMax = max(rightMax, height[r])
-                res += rightMax - height[r]                res += rightMax - height[r]
-        return res        return res
+        int l = 0;        int l = 0;
+        int r = n - 1;        int r = n - 1;
+
+        while (l < r) {        while (l < r) {
+        int sum = 0;        int sum = 0;
+            leftMax = max(leftMax, height[l]);            leftMax = max(leftMax, height[l]);
+        int leftMax = 0;        int leftMax = 0;
+        int rightMax = 0;        int rightMax = 0;
+            rightMax = max(rightMax, height[r]);            rightMax = max(rightMax, height[r]);
+
+            if (leftMax < rightMax) {            if (leftMax < rightMax) {
+                sum += leftMax - height[l];                sum += leftMax - height[l];
+                l++;                l++;
+            } else {            } else {
+                sum += rightMax - height[r];                sum += rightMax - height[r];
+                r--;                r--;
+            }            }
+        }        }
+            cout << sum << endl;            cout << sum << endl;
+        return sum;        return sum;
+    }    }
