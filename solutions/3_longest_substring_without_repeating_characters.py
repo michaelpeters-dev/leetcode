@@ -3,20 +3,29 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 22 ms
+# Memory: 14.25 MB
 
-class Solution:
-    def lengthOfLongestSubstring(self, s: str) -> int:
-        char_set = set()
-        l = 0
-        res = 0
+class Solution {class Solution {
+public:public:
+    int lengthOfLongestSubstring(string s) {    int lengthOfLongestSubstring(string s) {
+        int n = s.size();        int n = s.size();
+        int l = 0;        int l = 0;
+        int r = 0;        int r = 0;
+        unordered_set<int> store;        unordered_set<int> store;
 
-        for r in range(len(s)):
-            while s[r] in char_set:
-                char_set.remove(s[l])
-                l += 1
+    }    }
+        while (r < n) {        while (r < n) {
+            while (store.count(s[r])) {            while (store.count(s[r])) {
+        }        }
+        int longest = 0;        int longest = 0;
+                store.erase(s[l]);                store.erase(s[l]);
+            }            }
+                l++;                l++;
 
-            char_set.add(s[r])
-            res = max(res, r-l+1)
-        return res
+            store.insert(s[r]);            store.insert(s[r]);
+            longest = max(longest, r - l);            longest = max(longest, r - l);
+            r++;            r++;
+
+        return longest + 1;        return longest + 1;
+};};
