@@ -2,10 +2,10 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-164-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-165-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-55-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-95-ffc01e?style=for-the-badge)
-![Hard](https://img.shields.io/badge/Hard-14-ff375f?style=for-the-badge)
+![Hard](https://img.shields.io/badge/Hard-15-ff375f?style=for-the-badge)
 
 </div>
 
@@ -64,6 +64,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 70 | Climbing Stairs | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [70_climbing_stairs.py](solutions/70_climbing_stairs.py) |
 | 72 | Edit Distance | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [72_edit_distance.py](solutions/72_edit_distance.py) |
 | 74 | Search a 2D Matrix | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [74_search_a_2d_matrix.py](solutions/74_search_a_2d_matrix.py) |
+| 76 | Minimum Window Substring | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [76_minimum_window_substring.py](solutions/76_minimum_window_substring.py) |
 | 77 | Combinations | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [77_combinations.py](solutions/77_combinations.py) |
 | 78 | Subsets | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [78_subsets.py](solutions/78_subsets.py) |
 | 79 | Word Search | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [79_word_search.py](solutions/79_word_search.py) |
