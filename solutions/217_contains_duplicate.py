@@ -4,7 +4,7 @@
 # URL: https://leetcode.com/problems/contains-duplicate/
 # Submission Status: Accepted
 # Runtime: 19 ms
-# Memory: 25.86 MB
+# Memory: 25.95 MB
 
 class Solution(object):class Solution(object):
     def containsDuplicate(self, nums):    def containsDuplicate(self, nums):
@@ -13,9 +13,11 @@ class Solution(object):class Solution(object):
         :rtype: bool        :rtype: bool
         """        """
         store = set()        store = set()
+
         for num in nums:        for num in nums:
             if num in store:            if num in store:
-                return True                return True
-            store.add(num)            store.add(num)
-        return False        return False
+                return True                 return True 
+            else:            else:
+                store.add(num)                store.add(num)
+        return False         return False 
                 
