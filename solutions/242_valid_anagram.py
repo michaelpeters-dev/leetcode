@@ -3,8 +3,8 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/valid-anagram/
 # Submission Status: Accepted
-# Runtime: 11 ms
-# Memory: 12.41 MB
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
 class Solution(object):class Solution(object):
     def isAnagram(self, s, t):    def isAnagram(self, s, t):
@@ -13,13 +13,15 @@ class Solution(object):class Solution(object):
         :type t: str        :type t: str
         :rtype: bool        :rtype: bool
         """        """
+        if len(s) != len(t):        if len(s) != len(t):
+            return False            return False
+
         first = defaultdict(int)        first = defaultdict(int)
         second = defaultdict(int)        second = defaultdict(int)
 
-        for letter in s:        for letter in s:
-            first[letter] += 1            first[letter] += 1
+        for i in range(0, len(s)):        for i in range(0, len(s)):
+            first[s[i]] += 1            first[s[i]] += 1
                 
-        for letter in t:        for letter in t:
-            second[letter] += 1            second[letter] += 1
-
         return first == second        return first == second
+            second[t[i]] += 1            second[t[i]] += 1
+                
