@@ -13,16 +13,14 @@ class Solution(object):class Solution(object):
         :rtype: List[List[str]]        :rtype: List[List[str]]
         """        """
 
-        store = {}        store = {}
+        store = defaultdict(list)        store = defaultdict(list)
+
         for string in strs:        for string in strs:
-            temp = "".join(sorted(string))            temp = "".join(sorted(string))
-            if temp in store:            if temp in store:
-                store[temp].append(string)                store[temp].append(string)
-            else:            else:
-                store[temp] = []                store[temp] = []
+            sorted_string = "".join(sorted(string))            sorted_string = "".join(sorted(string))
+            store[sorted_string].append(string)            store[sorted_string].append(string)
+                
         result = []        result = []
         for key, value in store.items():        for key, value in store.items():
-            result.append(value)            result.append(value)
                 
-                store[temp].append(string)                store[temp].append(string)
+            result.append(value)            result.append(value)
         return result        return result
