@@ -3,19 +3,24 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/invert-binary-tree/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 12.34 MB
 
-class Solution:
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        if not root:
-            return
+        """        """
+        :type root: Optional[TreeNode]        :type root: Optional[TreeNode]
+        :rtype: Optional[TreeNode]        :rtype: Optional[TreeNode]
+        """        """
+            if root == None:            if root == None:
+        def helper(root):        def helper(root):
+                return root                return root
+            helper(root.right)            helper(root.right)
 
-        tmp = root.left
-        root.left = root.right
-        root.right = tmp
-
-        self.invertTree(root.left)
-        self.invertTree(root.right)
-
-        return root
+        helper(root)        helper(root)
+        return root        return root
+    def invertTree(self, root):    def invertTree(self, root):
+            helper(root.left)            helper(root.left)
+            temp = root.left            temp = root.left
+            root.left = root.right            root.left = root.right
+            root.right = temp            root.right = temp
+                        
+                
