@@ -4,22 +4,21 @@
 # URL: https://leetcode.com/problems/top-k-frequent-elements/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: N/A
+# Memory: 0.00 MB
 
-class Solution(object):class Solution(object):
-    def topKFrequent(self, nums, k):    def topKFrequent(self, nums, k):
-        """        """
-        :type nums: List[int]        :type nums: List[int]
-        :type k: int        :type k: int
-        :rtype: List[int]        :rtype: List[int]
-        """        """
-        store = {}        store = {}
-        for num in nums:        for num in nums:
-            if num not in store:            if num not in store:
-                store[num] = 1                store[num] = 1
-            else:            else:
-                store[num] += 1                store[num] += 1
                 
-        sorted_nums = sorted(store, key=store.get, reverse=True)        sorted_nums = sorted(store, key=store.get, reverse=True)
+        freq_map = {i:[] for i in range(0, len(nums) + 1)}        freq_map = {i:[] for i in range(0, len(nums) + 1)}
 
-        return sorted_nums[:k]        return sorted_nums[:k]
+        for key, value in counter.items():        for key, value in counter.items():
+            freq_map[value].append(key)            freq_map[value].append(key)
+                
+        result = []        result = []
+
+        for freq in range(len(freq_map)-1, -1, -1):        for freq in range(len(freq_map)-1, -1, -1):
+            for num in freq_map[freq]:            for num in freq_map[freq]:
+                result.append(num)                result.append(num)
+            counter[num] = counter[num] + 1            counter[num] = counter[num] + 1
+        for num in nums:        for num in nums:
+
+                if len(result) == k:                if len(result) == k:
+                    return result                    return result
