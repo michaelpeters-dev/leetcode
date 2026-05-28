@@ -3,26 +3,33 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/valid-sudoku/
 # Submission Status: Accepted
-# Runtime: 11 ms
-# Memory: 12.50 MB
+# Runtime: 0 ms
+# Memory: N/A
 
-        """        """
-        :type board: List[List[str]]        :type board: List[List[str]]
-        :rtype: bool        :rtype: bool
-        """        """
-        row = {i: set() for i in range(9)}        row = {i: set() for i in range(9)}
-        col = {i: set() for i in range(9)}        col = {i: set() for i in range(9)}
-        box = {(i, j): set() for i in range(3) for j in range(3)}        box = {(i, j): set() for i in range(3) for j in range(3)}
-
-        for rowcount in range(9):        for rowcount in range(9):
-            for colcount in range(9):            for colcount in range(9):
-                num = board[rowcount][colcount]                num = board[rowcount][colcount]
-                row[rowcount].add(num)                row[rowcount].add(num)
-                col[colcount].add(num)                col[colcount].add(num)
-                box[(rowcount//3, colcount//3)].add(num)                box[(rowcount//3, colcount//3)].add(num)
-                if num in row[rowcount] or num in col[colcount] or num in box[(rowcount//3, colcount//3)]:                if num in row[rowcount] or num in col[colcount] or num in box[(rowcount//3, colcount//3)]:
-                    return False                    return False
-
-                if num==".":                if num==".":
                     continue                    continue
+
+                if (val in horizontal.get(i, set())                if (val in horizontal.get(i, set())
+                    or val in vertical.get(j, set())                    or val in vertical.get(j, set())
+                    or val in block.get(square, set())):                    or val in block.get(square, set())):
+                    return False                    return False
+                else:                else:
+                                
         return True        return True
+                if val==".":                if val==".":
+                square = (i//3, j//3)                square = (i//3, j//3)
+
+                val = board[i][j]                val = board[i][j]
+
+            for j in range(0, 9):            for j in range(0, 9):
+        for i in range(0, 9):        for i in range(0, 9):
+
+        block = {}        block = {}
+        vertical = {}        vertical = {}
+        horizontal = {}        horizontal = {}
+
+        """        """
+                    horizontal.setdefault(i, set()).add(val)                    horizontal.setdefault(i, set()).add(val)
+        :rtype: bool        :rtype: bool
+                    vertical.setdefault(j, set()).add(val)                    vertical.setdefault(j, set()).add(val)
+                    block.setdefault(square, set()).add(val)                    block.setdefault(square, set()).add(val)
+                                
