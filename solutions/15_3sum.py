@@ -3,34 +3,32 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/3sum/
 # Submission Status: Accepted
-# Runtime: 48 ms
-# Memory: 28.99 MB
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
-                    ans.push_back({nums[p], nums[l], nums[r]});                    ans.push_back({nums[p], nums[l], nums[r]});
-                    l++;                    l++;
-                    r--;                    r--;
+        result = []        result = []
+        for i in range(len(nums) - 2):        for i in range(len(nums) - 2):
+            low = i + 1            low = i + 1
+            high = len(nums) - 1            high = len(nums) - 1
+            while low < high:            while low < high:
 
-                    while (l < r && nums[l]==nums[l-1]) l++;                    while (l < r && nums[l]==nums[l-1]) l++;
-                    while (l < r && nums[r]==nums[r+1]) r--;                    while (l < r && nums[r]==nums[r+1]) r--;
-                } else {                } else {
-                } else if (sum < 0) {                } else if (sum < 0) {
-                    l++;                    l++;
-                if (sum > 0) {                if (sum > 0) {
-                    r--;                    r--;
-            while (l < r) {            while (l < r) {
-                int sum = nums[l] + nums[r] + nums[p];                int sum = nums[l] + nums[r] + nums[p];
+                if summation == 0:                if summation == 0:
 
-            int r = n - 1;            int r = n - 1;
-            int l = p + 1;            int l = p + 1;
-                }                }
-            }            }
-        }        }
-        return ans;        return ans;
-    }    }
-};};
+                    result.append([nums[i], nums[low], nums[high]])                    result.append([nums[i], nums[low], nums[high]])
+                elif summation > 0:                elif summation > 0:
+            if i>0 and nums[i]==nums[i-1]:            if i>0 and nums[i]==nums[i-1]:
+                continue                continue
 
-        for (int p = 0; p < n; p++) {        for (int p = 0; p < n; p++) {
-            if (p>0 && nums[p]==nums[p-1]) continue;            if (p>0 && nums[p]==nums[p-1]) continue;
+                summation = nums[i] + nums[low] + nums[high]                summation = nums[i] + nums[low] + nums[high]
+                    high -= 1                    high -= 1
+                    while low < high and nums[low] == nums[low-1]:                    while low < high and nums[low] == nums[low-1]:
+                        low += 1                        low += 1
+                    while high > low and nums[high] == nums[high+1]:                    while high > low and nums[high] == nums[high+1]:
+                        high -= 1                        high -= 1
+                    low += 1                    low += 1
+                    high -= 1                     high -= 1 
 
-        sort(nums.begin(), nums.end());        sort(nums.begin(), nums.end());
-        vector<vector<int>> ans;        vector<vector<int>> ans;
+                else:                else:
+                    low += 1                    low += 1
+                
+        return result        return result
