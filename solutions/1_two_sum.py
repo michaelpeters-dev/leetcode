@@ -3,8 +3,8 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/two-sum/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: 0.00 MB
+# Runtime: 3 ms
+# Memory: 14.81 MB
 
 class Solution {class Solution {
 public:public:
