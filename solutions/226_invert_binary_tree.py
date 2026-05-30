@@ -4,23 +4,33 @@
 # URL: https://leetcode.com/problems/invert-binary-tree/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: 12.34 MB
+# Memory: N/A
 
-        """        """
-        :type root: Optional[TreeNode]        :type root: Optional[TreeNode]
-        :rtype: Optional[TreeNode]        :rtype: Optional[TreeNode]
-        """        """
-            if root == None:            if root == None:
-        def helper(root):        def helper(root):
-                return root                return root
-            helper(root.right)            helper(root.right)
+/**/**
+ * Definition for a binary tree node. * Definition for a binary tree node.
+ * struct TreeNode { * struct TreeNode {
+ *     int val; *     int val;
+ *     TreeNode *left; *     TreeNode *left;
+ *     TreeNode *right; *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {} *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {} *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {} *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * }; * };
+ */ */
+class Solution {class Solution {
+public:public:
+    void helper(TreeNode* root) {    void helper(TreeNode* root) {
+        if (root == nullptr) {        if (root == nullptr) {
+            return;            return;
+        }        }
 
-        helper(root)        helper(root)
-        return root        return root
-    def invertTree(self, root):    def invertTree(self, root):
-            helper(root.left)            helper(root.left)
-            temp = root.left            temp = root.left
-            root.left = root.right            root.left = root.right
-            root.right = temp            root.right = temp
-                        
-                
+        swap(root->left, root->right);        swap(root->left, root->right);
+        helper(root->left);        helper(root->left);
+        helper(root->right);        helper(root->right);
+    }    }
+    TreeNode* invertTree(TreeNode* root) {    TreeNode* invertTree(TreeNode* root) {
+        helper(root);        helper(root);
+        return root;        return root;
+    }    }
+
+};};
