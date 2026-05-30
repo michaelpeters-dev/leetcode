@@ -4,24 +4,23 @@
 # URL: https://leetcode.com/problems/valid-anagram/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: 0.00 MB
+# Memory: N/A
 
-class Solution(object):class Solution(object):
-    def isAnagram(self, s, t):    def isAnagram(self, s, t):
-        """        """
-        :type s: str        :type s: str
-        :type t: str        :type t: str
-        :rtype: bool        :rtype: bool
-        """        """
-        if len(s) != len(t):        if len(s) != len(t):
-            return False            return False
+class Solution {class Solution {
+public:public:
+    bool isAnagram(string s, string t) {    bool isAnagram(string s, string t) {
+        unordered_map<char, int> sStore;        unordered_map<char, int> sStore;
+        unordered_map<char, int> tStore;        unordered_map<char, int> tStore;
 
-        first = defaultdict(int)        first = defaultdict(int)
-        second = defaultdict(int)        second = defaultdict(int)
+        if (s.length() != t.length()) {        if (s.length() != t.length()) {
+            return false;            return false;
+        }        }
+    }    }
 
-        for i in range(0, len(s)):        for i in range(0, len(s)):
-            first[s[i]] += 1            first[s[i]] += 1
-                
-        return first == second        return first == second
-            second[t[i]] += 1            second[t[i]] += 1
-                
+        for (int i = 0; i < s.length(); i++) {        for (int i = 0; i < s.length(); i++) {
+            sStore[s[i]]++;            sStore[s[i]]++;
+        }        }
+            tStore[t[i]]++;            tStore[t[i]]++;
+
+        return sStore == tStore;        return sStore == tStore;
+};};
