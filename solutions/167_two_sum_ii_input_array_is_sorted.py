@@ -6,21 +6,20 @@
 # Runtime: 0 ms
 # Memory: 0.00 MB
 
-class Solution(object):class Solution(object):
-    def twoSum(self, numbers, target):    def twoSum(self, numbers, target):
-        """        """
-        :type numbers: List[int]        :type numbers: List[int]
-        :type target: int        :type target: int
-        :rtype: List[int]        :rtype: List[int]
-        """        """
-        r = len(numbers) - 1        r = len(numbers) - 1
-            if (total == target):            if (total == target):
+    vector<int> twoSum(vector<int>& numbers, int target) {    vector<int> twoSum(vector<int>& numbers, int target) {
+        int l = 0;        int l = 0;
+        int r = numbers.size() - 1;        int r = numbers.size() - 1;
 
-                return [l, r]                return [l, r]
-        while l<r:        while l<r:
-            total = numbers[l] + numbers[r]            total = numbers[l] + numbers[r]
-            elif (total < target):            elif (total < target):
-                l += 1                l += 1
-            else:            else:
-        l = 0        l = 0
-                r -= 1                r -= 1
+        while (l < r) {        while (l < r) {
+            if (sum == target) {            if (sum == target) {
+        }        }
+            int sum = numbers[l] + numbers[r];            int sum = numbers[l] + numbers[r];
+                return {l + 1, r + 1};                return {l + 1, r + 1};
+            } else if (sum < target) {            } else if (sum < target) {
+                l++;                l++;
+            } else {            } else {
+                r--;                r--;
+            }            }
+
+        return {};        return {};
+    }    }
