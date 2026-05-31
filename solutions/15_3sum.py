@@ -3,32 +3,37 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/3sum/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: 0.00 MB
+# Runtime: 43 ms
+# Memory: 29.21 MB
 
-        result = []        result = []
-        for i in range(len(nums) - 2):        for i in range(len(nums) - 2):
-            low = i + 1            low = i + 1
-            high = len(nums) - 1            high = len(nums) - 1
-            while low < high:            while low < high:
+        vector<vector<int>> result;        vector<vector<int>> result;
+        for (int i = 0; i < nums.size() - 2; i++) {        for (int i = 0; i < nums.size() - 2; i++) {
+            if (i>0 && nums[i]==nums[i-1]) {            if (i>0 && nums[i]==nums[i-1]) {
+                continue;                continue;
+            }            }
+            int left = i + 1;            int left = i + 1;
+            int right = nums.size() - 1;            int right = nums.size() - 1;
+            while (left < right) {            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];                int sum = nums[i] + nums[left] + nums[right];
 
-                if summation == 0:                if summation == 0:
+                if (sum > 0) {                if (sum > 0) {
+                    right--;                    right--;
+                } else if (sum < 0) {                } else if (sum < 0) {
+                    left++;                    left++;
+                } else {                } else {
+                    result.push_back({nums[i], nums[left], nums[right]});                    result.push_back({nums[i], nums[left], nums[right]});
+                    left++;                    left++;
+                    right--;                    right--;
+                    while (left < right && nums[left]==nums[left - 1]) {                    while (left < right && nums[left]==nums[left - 1]) {
+                        left++;                        left++;
+                    }                    }
 
-                    result.append([nums[i], nums[low], nums[high]])                    result.append([nums[i], nums[low], nums[high]])
-                elif summation > 0:                elif summation > 0:
-            if i>0 and nums[i]==nums[i-1]:            if i>0 and nums[i]==nums[i-1]:
-                continue                continue
-
-                summation = nums[i] + nums[low] + nums[high]                summation = nums[i] + nums[low] + nums[high]
-                    high -= 1                    high -= 1
-                    while low < high and nums[low] == nums[low-1]:                    while low < high and nums[low] == nums[low-1]:
-                        low += 1                        low += 1
-                    while high > low and nums[high] == nums[high+1]:                    while high > low and nums[high] == nums[high+1]:
-                        high -= 1                        high -= 1
-                    low += 1                    low += 1
-                    high -= 1                     high -= 1 
-
-                else:                else:
-                    low += 1                    low += 1
-                
-        return result        return result
+                    while (left < right && nums[right]==nums[right + 1]) {                    while (left < right && nums[right]==nums[right + 1]) {
+                        right--;                        right--;
+                    }                    }
+                }                }
+            }            }
+        }        }
+        return result;        return result;
+    }    }
+};};
