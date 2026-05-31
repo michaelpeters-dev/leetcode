@@ -4,32 +4,23 @@
 # URL: https://leetcode.com/problems/valid-sudoku/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: N/A
+# Memory: 0.00 MB
 
-                    continue                    continue
+                    continue;                    continue;
+                }                }
 
-                if (val in horizontal.get(i, set())                if (val in horizontal.get(i, set())
-                    or val in vertical.get(j, set())                    or val in vertical.get(j, set())
-                    or val in block.get(square, set())):                    or val in block.get(square, set())):
-                    return False                    return False
-                else:                else:
-                                
-        return True        return True
-                if val==".":                if val==".":
-                square = (i//3, j//3)                square = (i//3, j//3)
+                pair<int, int> box = {row/3, col/3};                pair<int, int> box = {row/3, col/3};
+                if (number == '.') {                if (number == '.') {
 
-                val = board[i][j]                val = board[i][j]
 
-            for j in range(0, 9):            for j in range(0, 9):
-        for i in range(0, 9):        for i in range(0, 9):
+                char number = board[row][col];                char number = board[row][col];
+                if (rows[row].count(number) || cols[col].count(number) || boxes[box].count(number)) {                if (rows[row].count(number) || cols[col].count(number) || boxes[box].count(number)) {
+                    return false;                    return false;
+                }                }
 
-        block = {}        block = {}
-        vertical = {}        vertical = {}
-        horizontal = {}        horizontal = {}
+                rows[row].insert(number);                rows[row].insert(number);
+                cols[col].insert(number);                cols[col].insert(number);
+                boxes[box].insert(number);                boxes[box].insert(number);
+            }            }
+        }        }
 
-        """        """
-                    horizontal.setdefault(i, set()).add(val)                    horizontal.setdefault(i, set()).add(val)
-        :rtype: bool        :rtype: bool
-                    vertical.setdefault(j, set()).add(val)                    vertical.setdefault(j, set()).add(val)
-                    block.setdefault(square, set()).add(val)                    block.setdefault(square, set()).add(val)
-                                
