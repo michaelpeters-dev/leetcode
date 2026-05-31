@@ -4,7 +4,7 @@
 # URL: https://leetcode.com/problems/trapping-rain-water/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: N/A
+# Memory: 25.94 MB
 
 class Solution {class Solution {
 public:public:
