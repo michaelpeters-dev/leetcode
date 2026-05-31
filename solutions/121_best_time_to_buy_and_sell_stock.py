@@ -4,22 +4,19 @@
 # URL: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: 97.22 MB
+# Memory: 0.00 MB
 
 class Solution {class Solution {
 public:public:
     int maxProfit(vector<int>& prices) {    int maxProfit(vector<int>& prices) {
-        int result = 0;        int result = 0;
         int minimum = INT_MAX;        int minimum = INT_MAX;
-        for (auto price: prices) {        for (auto price: prices) {
-            if (price < minimum) {            if (price < minimum) {
 
-                minimum = price;                minimum = price;
-            } else if (price > minimum){            } else if (price > minimum){
-                continue;                continue;
+        for (const auto& price: prices) {        for (const auto& price: prices) {
         }        }
-                result = max(price - minimum, result);                result = max(price - minimum, result);
-            }            }
+        int best = 0;        int best = 0;
+            minimum = min(minimum, price);            minimum = min(minimum, price);
     }    }
-        return result;        return result;
+
+        return best;        return best;
+            best = max(best, price - minimum);            best = max(best, price - minimum);
 };};
