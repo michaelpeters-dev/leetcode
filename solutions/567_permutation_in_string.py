@@ -3,39 +3,36 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/permutation-in-string/
 # Submission Status: Accepted
-# Runtime: 8 ms
-# Memory: 10.77 MB
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
 class Solution {class Solution {
 public:public:
     bool checkInclusion(string s1, string s2) {    bool checkInclusion(string s1, string s2) {
-        if (s2.size() < s1.size()) {        if (s2.size() < s1.size()) {
-        unordered_map<char, int> first;        unordered_map<char, int> first;
-        unordered_map<char, int> second;        unordered_map<char, int> second;
-
-            return false;            return false;
+        unordered_map<char, int> standard;        unordered_map<char, int> standard;
+        for (const auto& letter: s1) {        for (const auto& letter: s1) {
+            standard[letter]++;            standard[letter]++;
         }        }
 
-        for (int i = s1.size(); i < s2.size(); i++) {        for (int i = s1.size(); i < s2.size(); i++) {
-    }    }
-        }        }
-        for (int i = 0; i < s1.size(); i++) {        for (int i = 0; i < s1.size(); i++) {
-
-            first[s1[i]]++;            first[s1[i]]++;
-        }        }
-            second[s2[i]]++;            second[s2[i]]++;
-            second[s2[i]]++;            second[s2[i]]++;
-            second[s2[i-s1.size()]]--;            second[s2[i-s1.size()]]--;
-
-            if (second[s2[i-s1.size()]]==0) {            if (second[s2[i-s1.size()]]==0) {
-                second.erase(s2[i-s1.size()]);                second.erase(s2[i-s1.size()]);
+        for (int i = 0; i < s2.length(); i++) {        for (int i = 0; i < s2.length(); i++) {
+            if (i<s1.length()) {            if (i<s1.length()) {
+                store[s2[i]]++;                store[s2[i]]++;
             }            }
+        unordered_map<char, int> store;        unordered_map<char, int> store;
+                continue;                continue;
 
-            if (first==second) {            if (first==second) {
+            if (store == standard) {            if (store == standard) {
                 return true;                return true;
             }            }
+            store[s2[i]]++;            store[s2[i]]++;
+            store[s2[i - s1.length()]]--;            store[s2[i - s1.length()]]--;
+
         return false;        return false;
+            if(store[s2[i - s1.length()]] == 0) {            if(store[s2[i - s1.length()]] == 0) {
+        }        }
+                store.erase(s2[i - s1.length()]);                store.erase(s2[i - s1.length()]);
+            }            }
+    }    }
 
-
-        if (first==second) return true;        if (first==second) return true;
+        if (store == standard) return true;        if (store == standard) return true;
 };};
