@@ -3,20 +3,23 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/valid-parentheses/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
-class Solution:
-    def isValid(self, s: str) -> bool:
-        stack = []
-        m = {")":"(", "]":"[", "}":"{"}
+        };        };
 
-        for c in s:
-            if c in m:
-                if not stack or stack[-1] != m[c]:
-                    return False
-                stack.pop()
-            else:
-                stack.append(c)
+        for (const auto& ch: s) {        for (const auto& ch: s) {
+            if (stack.size() == 0) {            if (stack.size() == 0) {
+                stack.push_back(ch);                stack.push_back(ch);
+            } else {            } else {
+                if (stack.back() == dict[ch]) {                if (stack.back() == dict[ch]) {
+            }            }
+                    stack.pop_back();                    stack.pop_back();
+                } else {                } else {
+                    stack.push_back(ch);                    stack.push_back(ch);
+                }                }
+        }        }
 
-        return len(stack) == 0
+        return stack.size() == 0;        return stack.size() == 0;
+    }    }
+};};
