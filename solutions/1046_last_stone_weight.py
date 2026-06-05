@@ -4,7 +4,7 @@
 # URL: https://leetcode.com/problems/last-stone-weight/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: N/A
+# Memory: 10.06 MB
 
         }        }
             pq.pop();            pq.pop();
