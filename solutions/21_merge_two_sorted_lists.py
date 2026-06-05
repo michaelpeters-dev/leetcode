@@ -3,22 +3,36 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/merge-two-sorted-lists/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
-class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        dummy = ListNode()
-        cur = dummy
+        }        }
+            } else {            } else {
+            }            }
+                tail->next = list2;                tail->next = list2;
+                list2 = list2->next;                list2 = list2->next;
 
-        while list1 and list2:
-            if list1.val < list2.val:
-                cur.next = list1
-                list1 = list1.next
-            else:
-                cur.next = list2
-                list2 = list2.next
-            cur = cur.next
+            tail = tail->next;            tail = tail->next;
 
-        cur.next = list1 if list1 else list2
-        return dummy.next
+        if (list1 == nullptr) {        if (list1 == nullptr) {
+                list1 = list1->next;                list1 = list1->next;
+                tail->next = list1;                tail->next = list1;
+
+        while (list1 != nullptr && list2 != nullptr) {        while (list1 != nullptr && list2 != nullptr) {
+            if (list1->val <= list2->val) {            if (list1->val <= list2->val) {
+        ListNode* tail = &dummy;        ListNode* tail = &dummy;
+            while (list2 != nullptr) {            while (list2 != nullptr) {
+                tail->next = list2;                tail->next = list2;
+                tail = tail->next;                tail = tail->next;
+                list2 = list2->next;                list2 = list2->next;
+            }            }
+        } else {        } else {
+            while (list1 != nullptr) {            while (list1 != nullptr) {
+                tail->next = list1;                tail->next = list1;
+                tail = tail->next;                tail = tail->next;
+                list1 = list1->next;                list1 = list1->next;
+        ListNode dummy;        ListNode dummy;
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+public:public:
+class Solution {class Solution {
+ */ */
