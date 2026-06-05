@@ -3,19 +3,26 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/last-stone-weight/
 # Submission Status: Accepted
-# Runtime: 1 ms
-# Memory: 17.42 MB
+# Runtime: 0 ms
+# Memory: N/A
 
-class Solution:class Solution:
-    def lastStoneWeight(self, stones: List[int]) -> int:    def lastStoneWeight(self, stones: List[int]) -> int:
-        stones = [-s for s in stones]        stones = [-s for s in stones]
-        heapq.heapify(stones)        heapq.heapify(stones)
+        }        }
+            pq.pop();            pq.pop();
 
-        while len(stones) > 1:        while len(stones) > 1:
-            first = heapq.heappop(stones)            first = heapq.heappop(stones)
-            second = heapq.heappop(stones)            second = heapq.heappop(stones)
-            if second > first:            if second > first:
-                heapq.heappush(stones, first - second)                heapq.heappush(stones, first - second)
-        return abs(stones[0])        return abs(stones[0])
-        stones.append(0)        stones.append(0)
-                
+            if (x == y) {            if (x == y) {
+                continue;                continue;
+            } else if (x != y) {            } else if (x != y) {
+                pq.push(abs(y - x));                pq.push(abs(y - x));
+            }            }
+
+        if (pq.size() == 0) {        if (pq.size() == 0) {
+            return 0;            return 0;
+        } else {        } else {
+            return pq.top();            return pq.top();
+        }        }
+    }    }
+};};
+            int y = pq.top();            int y = pq.top();
+
+            pq.pop();            pq.pop();
+            int x = pq.top();            int x = pq.top();
