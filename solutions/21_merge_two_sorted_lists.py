@@ -3,8 +3,8 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/merge-two-sorted-lists/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: 0.00 MB
+# Runtime: 2 ms
+# Memory: 19.53 MB
 
         }        }
             } else {            } else {
