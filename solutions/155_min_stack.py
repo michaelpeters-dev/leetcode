@@ -3,8 +3,8 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/min-stack/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: N/A
+# Runtime: 47 ms
+# Memory: 152.51 MB
 
         
     void pop() {    void pop() {
