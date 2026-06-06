@@ -6,19 +6,30 @@
 # Runtime: 0 ms
 # Memory: N/A
 
-    def pop(self) -> None:    def pop(self) -> None:
-        if self.stack[-1]<=self.minimum[-1]:        if self.stack[-1]<=self.minimum[-1]:
-            self.stack.pop()            self.stack.pop()
-            self.minimum.pop()            self.minimum.pop()
-
-        self.stack.append(val)        self.stack.append(val)
-        if len(self.minimum)==0 or val<=self.minimum[-1]:        if len(self.minimum)==0 or val<=self.minimum[-1]:
-            self.minimum.append(val)            self.minimum.append(val)
-    def push(self, val: int) -> None:    def push(self, val: int) -> None:
-
-        self.skips = 0        self.skips = 0
-        self.stack = []        self.stack = []
-        self.minimum = []        self.minimum = []
-    def __init__(self):    def __init__(self):
-
-class MinStack:class MinStack:
+        
+    void pop() {    void pop() {
+        
+    int top() {    int top() {
+        stack.pop_back();        stack.pop_back();
+    }    }
+        return stack.back();        return stack.back();
+    }    }
+        
+    int getMin() {    int getMin() {
+        return minStack.back();        return minStack.back();
+        minStack.pop_back();        minStack.pop_back();
+    }    }
+        }        }
+        } else {        } else {
+            minStack.push_back(min(minStack.back(), value));            minStack.push_back(min(minStack.back(), value));
+            minStack.push_back(value);            minStack.push_back(value);
+        if (stack.size() == 1) {        if (stack.size() == 1) {
+        stack.push_back(value);           stack.push_back(value);   
+    void push(int value) {    void push(int value) {
+        
+    }    }
+    MinStack() {    MinStack() {
+    vector<int> minStack;    vector<int> minStack;
+    vector<int> stack;    vector<int> stack;
+    }    }
+};};
