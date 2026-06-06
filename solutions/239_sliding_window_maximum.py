@@ -3,23 +3,28 @@
 # Difficulty: Hard
 # URL: https://leetcode.com/problems/sliding-window-maximum/
 # Submission Status: Accepted
-# Runtime: 200 ms
-# Memory: 34.91 MB
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
-        q = collections.deque() # Contains indices        q = collections.deque() # Contains indices
-        l = r = 0        l = r = 0
+        vector<int> result;        vector<int> result;
+        deque<int> dq;        deque<int> dq;
 
-        while r < len(nums):        while r < len(nums):
-            while q and nums[q[-1]] < nums[r]:            while q and nums[q[-1]] < nums[r]:
-            q.append(r)            q.append(r)
-                q.pop()                q.pop()
+        for (int i = 0; i < nums.size(); i++) {        for (int i = 0; i < nums.size(); i++) {
+            while (!dq.empty() && dq.front() <= i - k) {            while (!dq.empty() && dq.front() <= i - k) {
+                dq.pop_front();                dq.pop_front();
+            }            }
 
-            # remove left val from window            # remove left val from window
-            if l > q[0]:            if l > q[0]:
-                q.popleft()                q.popleft()
-                        
-            if (r + 1) >= k:            if (r + 1) >= k:
-                output.append(nums[q[0]])                output.append(nums[q[0]])
-            r += 1            r += 1
-                l += 1                l += 1
-        return output        return output
+            while (!dq.empty() && nums[dq.back()] < nums[i]) {            while (!dq.empty() && nums[dq.back()] < nums[i]) {
+                dq.pop_back();                dq.pop_back();
+            }            }
+
+            dq.push_back(i);            dq.push_back(i);
+
+            if (i >= k - 1) {            if (i >= k - 1) {
+                result.push_back(nums[dq.front()]);                result.push_back(nums[dq.front()]);
+            }            }
+        }        }
+
+        return result;        return result;
+    }    }
+};};
