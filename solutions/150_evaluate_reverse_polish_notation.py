@@ -3,22 +3,33 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/evaluate-reverse-polish-notation/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: N/A
+# Runtime: 3 ms
+# Memory: 17.08 MB
 
-class Solution:class Solution:
-    def evalRPN(self, tokens: List[str]) -> int:    def evalRPN(self, tokens: List[str]) -> int:
-        stack = []        stack = []
-        for i in range(len(tokens)):        for i in range(len(tokens)):
-            if tokens[i] in "+-/*":            if tokens[i] in "+-/*":
-                operation = tokens[i]                operation = tokens[i]
-            else:            else:
-                stack.append(int(tokens[i]))                stack.append(int(tokens[i]))
-                second_operand = stack.pop()                second_operand = stack.pop()
-                first_operand = stack.pop()                first_operand = stack.pop()
-                if operation=="+": stack.append(first_operand + second_operand)                if operation=="+": stack.append(first_operand + second_operand)
-                elif operation=="-": stack.append(first_operand - second_operand)                elif operation=="-": stack.append(first_operand - second_operand)
-                elif operation=="*": stack.append(first_operand * second_operand)                elif operation=="*": stack.append(first_operand * second_operand)
-                elif operation=="/": stack.append(int(first_operand / second_operand))                elif operation=="/": stack.append(int(first_operand / second_operand))
-        return stack[0]        return stack[0]
-                                
+public:public:
+    int evalRPN(vector<string>& tokens) {    int evalRPN(vector<string>& tokens) {
+        stack<int> st;        stack<int> st;
+
+        for (const auto& token: tokens) {        for (const auto& token: tokens) {
+        }        }
+            if (token == "+" || token == "-" || token == "*" || token == "/") {            if (token == "+" || token == "-" || token == "*" || token == "/") {
+
+        return st.top();        return st.top();
+                int two = st.top(); st.pop();                int two = st.top(); st.pop();
+            } else {            } else {
+                int one = st.top(); st.pop();                int one = st.top(); st.pop();
+
+                if (token == "+") {                if (token == "+") {
+                    st.push(one + two);                    st.push(one + two);
+                } else if (token == "-") {                } else if (token == "-") {
+                int temp{};                int temp{};
+                    st.push(one - two);                    st.push(one - two);
+                } else if (token == "*") {                } else if (token == "*") {
+                    st.push(one * two);                    st.push(one * two);
+                } else {                } else {
+                    st.push(one / two);                    st.push(one / two);
+                }                }
+                st.push(stoi(token));                st.push(stoi(token));
+            }            }
+    }    }
+};};
