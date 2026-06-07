@@ -3,24 +3,29 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/generate-parentheses/
 # Submission Status: Accepted
-# Runtime: 134 ms
-# Memory: 18.23 MB
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
-        def dfs(i, temp):        def dfs(i, temp):
-        res = []        res = []
-            if i==(n*2):            if i==(n*2):
-                if validParenthesis(temp):                if validParenthesis(temp):
-                    res.append(temp)                    res.append(temp)
+class Solution {class Solution {
+public:public:
+    void dfs(int open, int closed, int n, string current, vector<string>& result) {    void dfs(int open, int closed, int n, string current, vector<string>& result) {
+        if (current.size() == 2*n) {        if (current.size() == 2*n) {
+            result.push_back(current);            result.push_back(current);
+            return;            return;
+        }        }
 
-            return True if len(stack)==0 else False            return True if len(stack)==0 else False
-                stack.append(letter)                stack.append(letter)
-            for i, letter in enumerate(string):            for i, letter in enumerate(string):
-            stack = []            stack = []
-        def validParenthesis(string):        def validParenthesis(string):
-    def generateParenthesis(self, n: int) -> List[str]:    def generateParenthesis(self, n: int) -> List[str]:
-class Solution:class Solution:
-                if len(stack)>1 and stack[-1]==")" and stack[-2]=="(":                if len(stack)>1 and stack[-1]==")" and stack[-2]=="(":
-                    stack.pop()                    stack.pop()
-                    stack.pop()                    stack.pop()
-                return                return
-                        
+        if (open < n) {        if (open < n) {
+            dfs(open + 1, closed, n, current + "(", result);            dfs(open + 1, closed, n, current + "(", result);
+        }        }
+
+        if (closed < open) {        if (closed < open) {
+            dfs(open, closed + 1, n, current + ")", result);            dfs(open, closed + 1, n, current + ")", result);
+        }        }
+    }    }
+    vector<string> generateParenthesis(int n) {    vector<string> generateParenthesis(int n) {
+
+        vector<string> result;        vector<string> result;
+    }    }
+        dfs(0, 0, n, "", result);        dfs(0, 0, n, "", result);
+        return result;        return result;
+};};
