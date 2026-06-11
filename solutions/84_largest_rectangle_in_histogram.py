@@ -3,8 +3,8 @@
 # Difficulty: Hard
 # URL: https://leetcode.com/problems/largest-rectangle-in-histogram/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: 0.00 MB
+# Runtime: 23 ms
+# Memory: 81.35 MB
 
 
             while (!st.empty() && heights[st.top()] > heights[idx]) {            while (!st.empty() && heights[st.top()] > heights[idx]) {
