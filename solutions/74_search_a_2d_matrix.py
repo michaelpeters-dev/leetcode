@@ -4,22 +4,29 @@
 # URL: https://leetcode.com/problems/search-a-2d-matrix/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: N/A
+# Memory: 0.00 MB
 
+class Solution {class Solution {
+public:public:
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        int l = 0;        int l = 0;
+        int r = matrix.size() * matrix[0].size() - 1;        int r = matrix.size() * matrix[0].size() - 1;
 
-        l, r = 0, (m * n - 1)        l, r = 0, (m * n - 1)
+        while (l <= r) {        while (l <= r) {
+            int mid = (l + r) / 2;            int mid = (l + r) / 2;
+        }        }
+            int row = mid / matrix[0].size();            int row = mid / matrix[0].size();
+            int col = mid % matrix[0].size();            int col = mid % matrix[0].size();
 
-        while l<=r:        while l<=r:
-            mid = (l + r)//2            mid = (l + r)//2
+            if (num == target) {            if (num == target) {
+            int num = matrix[row][col];            int num = matrix[row][col];
+                return true;                return true;
+            } else if (num < target) {            } else if (num < target) {
+                l = mid + 1;                l = mid + 1;
+            } else {            } else {
+                r = mid - 1;                r = mid - 1;
+            }            }
 
-            left_coord = matrix[l//n][l%n]            left_coord = matrix[l//n][l%n]
-            right_cord = matrix[r//n][r%n]            right_cord = matrix[r//n][r%n]
-            mid_coord = matrix[mid//n][mid%n]            mid_coord = matrix[mid//n][mid%n]
-
-            if mid_coord==target:            if mid_coord==target:
-                return True                return True
-            elif mid_coord>target:            elif mid_coord>target:
-                r = mid - 1                r = mid - 1
-            else:            else:
-                l = mid + 1                l = mid + 1
-        return False        return False
+    }    }
+        return false;        return false;
+};};
