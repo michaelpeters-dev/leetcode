@@ -4,21 +4,32 @@
 # URL: https://leetcode.com/problems/largest-rectangle-in-histogram/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: N/A
+# Memory: 0.00 MB
 
-class Solution:class Solution:
-    def largestRectangleArea(self, heights: List[int]) -> int:    def largestRectangleArea(self, heights: List[int]) -> int:
-        maxArea = 0        maxArea = 0
-        stack = [] # Hold a pair: (index, height)        stack = [] # Hold a pair: (index, height)
-                
-        for i, h in enumerate(heights):        for i, h in enumerate(heights):
-            start = i            start = i
-            while stack and stack[-1][1] > h:            while stack and stack[-1][1] > h:
-                index, height = stack.pop()                index, height = stack.pop()
-                maxArea = max(maxArea, height * (i - index))                maxArea = max(maxArea, height * (i - index))
-                start = index                start = index
-            stack.append((start, h))            stack.append((start, h))
-                
-        for i, h in stack:        for i, h in stack:
-            maxArea = max(maxArea, h * (len(heights) - i))            maxArea = max(maxArea, h * (len(heights) - i))
-        return maxArea        return maxArea
+
+            while (!st.empty() && heights[st.top()] > heights[idx]) {            while (!st.empty() && heights[st.top()] > heights[idx]) {
+                int height = heights[st.top()]; st.pop();                int height = heights[st.top()]; st.pop();
+
+                int width;                int width;
+                if (st.empty()) {                if (st.empty()) {
+                    width = idx;                    width = idx;
+                } else {                } else {
+                    width = idx - st.top() - 1;                    width = idx - st.top() - 1;
+                }                }
+
+                maxArea = max(maxArea, height * width);                maxArea = max(maxArea, height * width);
+            }            }
+
+            st.push(idx);            st.push(idx);
+        }        }
+
+        int idx = heights.size();        int idx = heights.size();
+        while (!st.empty()) {        while (!st.empty()) {
+            int height = heights[st.top()]; st.pop();            int height = heights[st.top()]; st.pop();
+            int width;            int width;
+            if (st.empty()) width = idx;            if (st.empty()) width = idx;
+            else width = idx - st.top() - 1;            else width = idx - st.top() - 1;
+
+            maxArea = max(maxArea, height * width);            maxArea = max(maxArea, height * width);
+        }        }
+
