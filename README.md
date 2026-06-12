@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-166-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-167-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-55-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-96-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-97-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-15-ff375f?style=for-the-badge)
 
 </div>
@@ -171,6 +171,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 746 | Min Cost Climbing Stairs | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [746_min_cost_climbing_stairs.py](solutions/746_min_cost_climbing_stairs.py) |
 | 778 | Swim in Rising Water | ![Hard](https://img.shields.io/badge/Hard-ff375f?style=flat-square) | [778_swim_in_rising_water.py](solutions/778_swim_in_rising_water.py) |
 | 853 | Car Fleet | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [853_car_fleet.py](solutions/853_car_fleet.py) |
+| 875 | Koko Eating Bananas | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [875_koko_eating_bananas.py](solutions/875_koko_eating_bananas.py) |
 | 876 | Middle of the Linked List | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [876_middle_of_the_linked_list.py](solutions/876_middle_of_the_linked_list.py) |
 | 918 | Maximum Sum Circular Subarray | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [918_maximum_sum_circular_subarray.py](solutions/918_maximum_sum_circular_subarray.py) |
 | 994 | Rotting Oranges | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [994_rotting_oranges.py](solutions/994_rotting_oranges.py) |
