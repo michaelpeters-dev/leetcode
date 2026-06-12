@@ -4,26 +4,26 @@
 # URL: https://leetcode.com/problems/search-in-rotated-sorted-array/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: 15.13 MB
+# Memory: 15.28 MB
 
+            int mid = (l + r) / 2;            int mid = (l + r) / 2;
+            if (nums[mid] > nums[r]) {             if (nums[mid] > nums[r]) { 
+                l = mid + 1;                l = mid + 1;
+            } else {            } else {
+                r = mid;                r = mid;
+            }            }
+        }        }
 
         int pivot = l;        int pivot = l;
                 
-        l = 0;        l = 0;
-        r = nums.size() - 1;        r = nums.size() - 1;
+        l = pivot;        l = pivot;
+        r = nums.size() + pivot - 1;        r = nums.size() + pivot - 1;
         while (l <= r) {        while (l <= r) {
+            int fakeMid = (l + r)/2;            int fakeMid = (l + r)/2;
+            int realMid = fakeMid % nums.size();            int realMid = fakeMid % nums.size();
+            int value = nums[realMid];            int value = nums[realMid];
             if (value < target) {            if (value < target) {
                 l = fakeMid + 1;                l = fakeMid + 1;
-        }        }
-                r = mid;                r = mid;
-            }            }
-            } else {            } else {
-            if (nums[mid] > nums[r]) {             if (nums[mid] > nums[r]) { 
-                l = mid + 1;                l = mid + 1;
-            int mid = (l + r) / 2;            int mid = (l + r) / 2;
-            int value = nums[realMid];            int value = nums[realMid];
-            int fakeMid = (l + r)/2;            int fakeMid = (l + r)/2;
-            int realMid = (fakeMid + pivot) % nums.size();            int realMid = (fakeMid + pivot) % nums.size();
             } else if (value > target) {            } else if (value > target) {
                 r = fakeMid - 1;                r = fakeMid - 1;
             } else {            } else {
