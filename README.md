@@ -2,9 +2,9 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-167-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-168-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-55-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-97-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-98-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-15-ff375f?style=for-the-badge)
 
 </div>
@@ -174,6 +174,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 875 | Koko Eating Bananas | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [875_koko_eating_bananas.py](solutions/875_koko_eating_bananas.py) |
 | 876 | Middle of the Linked List | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [876_middle_of_the_linked_list.py](solutions/876_middle_of_the_linked_list.py) |
 | 918 | Maximum Sum Circular Subarray | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [918_maximum_sum_circular_subarray.py](solutions/918_maximum_sum_circular_subarray.py) |
+| 981 | Time Based Key-Value Store | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [981_time_based_key_value_store.py](solutions/981_time_based_key_value_store.py) |
 | 994 | Rotting Oranges | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [994_rotting_oranges.py](solutions/994_rotting_oranges.py) |
 | 1046 | Last Stone Weight | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [1046_last_stone_weight.py](solutions/1046_last_stone_weight.py) |
 | 1143 | Longest Common Subsequence | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [1143_longest_common_subsequence.py](solutions/1143_longest_common_subsequence.py) |
