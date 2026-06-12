@@ -3,24 +3,26 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 14.07 MB
 
-class Solution(object):
-    def findMin(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        n = len(nums)
-        L = 0
-        R = n - 1
+class Solution {class Solution {
+public:public:
+    int findMin(vector<int>& nums) {    int findMin(vector<int>& nums) {
+        int l = 0;        int l = 0;
+        int r = nums.size() - 1;        int r = nums.size() - 1;
 
-        while L<R:
-            M = (L+R)//2
+        while (l < r) {        while (l < r) {
+            int mid = (l + r) / 2;            int mid = (l + r) / 2;
+        }        }
+            if (nums[r] < value) {            if (nums[r] < value) {
+            int value = nums[mid];            int value = nums[mid];
 
-            if nums[M]>nums[R]:
-                L = M + 1
-            else:
-                R = M
-        return nums[L]
+                l = mid + 1;                l = mid + 1;
+            } else {            } else {
+                r = mid;                r = mid;
+            }            }
+    }    }
+
+        return nums[l];        return nums[l];
+};};
