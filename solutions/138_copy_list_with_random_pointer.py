@@ -3,23 +3,30 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/copy-list-with-random-pointer/
 # Submission Status: Accepted
-# Runtime: 37 ms
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
-        store = {None: None}        store = {None: None}
-        curr = head        curr = head
-        while (curr):        while (curr):
-            temp = Node(curr.val)            temp = Node(curr.val)
-            store[curr] = temp            store[curr] = temp
-            curr = curr.next            curr = curr.next
-                
-        curr = head        curr = head
-        while (curr):        while (curr):
-            next_node = curr.next            next_node = curr.next
-            store[curr].next = store[next_node]            store[curr].next = store[next_node]
 
-            random_node = curr.random            random_node = curr.random
-            store[curr].random = store[random_node]            store[curr].random = store[random_node]
+        if (head == nullptr) {        if (head == nullptr) {
+            return nullptr;            return nullptr;
+        }        }
 
-            curr = curr.next            curr = curr.next
-        return store[head]        return store[head]
+        Node* curr = head;        Node* curr = head;
+
+        while (curr != nullptr) {        while (curr != nullptr) {
+            copies[curr] = new Node(curr->val);            copies[curr] = new Node(curr->val);
+            curr = curr->next;            curr = curr->next;
+        }        }
+
+        curr = head;        curr = head;
+
+        while (curr != nullptr) {        while (curr != nullptr) {
+            copies[curr]->next = copies[curr->next];            copies[curr]->next = copies[curr->next];
+        }        }
+    }    }
+            copies[curr]->random = copies[curr->random];            copies[curr]->random = copies[curr->random];
+
+            curr = curr->next;            curr = curr->next;
+
+        return copies[head];        return copies[head];
+};};
