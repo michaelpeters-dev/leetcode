@@ -3,36 +3,34 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/merge-two-sorted-lists/
 # Submission Status: Accepted
-# Runtime: 2 ms
-# Memory: 19.53 MB
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
+
+        while (first != nullptr && second != nullptr) {        while (first != nullptr && second != nullptr) {
         }        }
             } else {            } else {
+            if (first->val < second->val) {            if (first->val < second->val) {
+                temp->next = first;                temp->next = first;
+                temp->next = second;                temp->next = second;
             }            }
-                tail->next = list2;                tail->next = list2;
-                list2 = list2->next;                list2 = list2->next;
+            temp = temp->next;            temp = temp->next;
+                first = first->next;                first = first->next;
+                second = second->next;                second = second->next;
 
-            tail = tail->next;            tail = tail->next;
+        while (first != nullptr) {        while (first != nullptr) {
+            temp->next = first;            temp->next = first;
+        }        }
+            first = first->next;            first = first->next;
+        while (second != nullptr) {        while (second != nullptr) {
+            temp->next = second;            temp->next = second;
+            second = second ->next;            second = second ->next;
+        ListNode* temp = &dummy;        ListNode* temp = &dummy;
+        ListNode dummy(0);        ListNode dummy(0);
 
-        if (list1 == nullptr) {        if (list1 == nullptr) {
-                list1 = list1->next;                list1 = list1->next;
-                tail->next = list1;                tail->next = list1;
-
-        while (list1 != nullptr && list2 != nullptr) {        while (list1 != nullptr && list2 != nullptr) {
-            if (list1->val <= list2->val) {            if (list1->val <= list2->val) {
-        ListNode* tail = &dummy;        ListNode* tail = &dummy;
-            while (list2 != nullptr) {            while (list2 != nullptr) {
-                tail->next = list2;                tail->next = list2;
-                tail = tail->next;                tail = tail->next;
-                list2 = list2->next;                list2 = list2->next;
-            }            }
-        } else {        } else {
-            while (list1 != nullptr) {            while (list1 != nullptr) {
-                tail->next = list1;                tail->next = list1;
-                tail = tail->next;                tail = tail->next;
-                list1 = list1->next;                list1 = list1->next;
-        ListNode dummy;        ListNode dummy;
+        ListNode* second = list2;        ListNode* second = list2;
+        ListNode* first = list1;        ListNode* first = list1;
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-public:public:
-class Solution {class Solution {
- */ */
+            temp = temp->next;            temp = temp->next;
+            temp = temp->next;            temp = temp->next;
+        }        }
