@@ -3,23 +3,28 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/subtree-of-another-tree/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
-class Solution:
-    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
-        if not subRoot: return True
-        if not root and subRoot: return False
+        }        }
 
-        if self.sameTree(root, subRoot):
-            return True
+        preOrder(first->left, second->left);        preOrder(first->left, second->left);
+        preOrder(first->right, second->right);        preOrder(first->right, second->right);
+    }    }
 
-        return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
+    bool isSame(TreeNode* a, TreeNode* b) {    bool isSame(TreeNode* a, TreeNode* b) {
+        same = true;        same = true;
+        preOrder(a, b);        preOrder(a, b);
+        return same;        return same;
+    }    }
 
 
-    def sameTree(self, p, q):
-        if not p and not q:
-            return True
-        if p and q and p.val==q.val:
-            return (self.sameTree(p.left, q.left) and self.sameTree(p.right, q.right))
-        return False
+    bool isSubtree(TreeNode* root, TreeNode* subRoot) {    bool isSubtree(TreeNode* root, TreeNode* subRoot) {
+        if (root == nullptr) {        if (root == nullptr) {
+            return false;            return false;
+        }        }
+
+        if (isSame(root, subRoot)) return true;        if (isSame(root, subRoot)) return true;
+        return (isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot));        return (isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot));
+    }    }
+};};
