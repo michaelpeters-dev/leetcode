@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Total](https://img.shields.io/badge/Total-168-ffa116?style=for-the-badge)
+![Total](https://img.shields.io/badge/Total-169-ffa116?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-55-00b8a3?style=for-the-badge)
 ![Medium](https://img.shields.io/badge/Medium-98-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-15-ff375f?style=for-the-badge)
@@ -183,6 +183,7 @@ My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension 
 | 1584 | Min Cost to Connect All Points | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [1584_min_cost_to_connect_all_points.py](solutions/1584_min_cost_to_connect_all_points.py) |
 | 1700 | Number of Students Unable to Eat Lunch | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | [1700_number_of_students_unable_to_eat_lunch.py](solutions/1700_number_of_students_unable_to_eat_lunch.py) |
 | 2013 | Detect Squares | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | [2013_detect_squares.py](solutions/2013_detect_squares.py) |
+| 2415 | Reverse Odd Levels of Binary Tree | ![Unknown](https://img.shields.io/badge/Unknown-808080?style=flat-square) | [2415_invert_binary_tree.py](solutions/2415_invert_binary_tree.py) |
 
 
 ---
