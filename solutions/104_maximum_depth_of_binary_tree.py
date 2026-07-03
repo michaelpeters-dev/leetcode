@@ -20,14 +20,10 @@
 class Solution {class Solution {
 public:public:
     int maxDepth(TreeNode* root) {    int maxDepth(TreeNode* root) {
-        return helper(root);        return helper(root);
-    int helper(TreeNode* root) {    int helper(TreeNode* root) {
-
         if (root == nullptr) {        if (root == nullptr) {
-    }    }
             return 0;            return 0;
         }        }
     }    }
 
-        return max(helper(root->left), helper(root->right)) + 1;        return max(helper(root->left), helper(root->right)) + 1;
+        return max(maxDepth(root->left), maxDepth(root->right)) + 1;        return max(maxDepth(root->left), maxDepth(root->right)) + 1;
 };};
