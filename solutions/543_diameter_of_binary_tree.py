@@ -3,8 +3,8 @@
 # Difficulty: Easy
 # URL: https://leetcode.com/problems/diameter-of-binary-tree/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: 0.00 MB
+# Runtime: 321 ms
+# Memory: 24.17 MB
 
 public:public:
     int diameterOfBinaryTree(TreeNode* root) {    int diameterOfBinaryTree(TreeNode* root) {
