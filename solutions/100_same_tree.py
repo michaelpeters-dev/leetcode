@@ -4,20 +4,31 @@
 # URL: https://leetcode.com/problems/same-tree/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: 0.00 MB
+# Memory: N/A
 
-        :rtype: bool        :rtype: bool
-        """        """
-        def helper(p, q):        def helper(p, q):
-            if (not p and not q):            if (not p and not q):
-                        
-            return helper(p.left, q.left) and helper(p.right, q.right)            return helper(p.left, q.left) and helper(p.right, q.right)
-            if (not p and q) or (p and not q):            if (not p and q) or (p and not q):
-                return False                 return False 
-                return True                return True
-        :type q: Optional[TreeNode]        :type q: Optional[TreeNode]
-        :type p: Optional[TreeNode]        :type p: Optional[TreeNode]
-            if p.val != q.val:            if p.val != q.val:
-                return False                return False
-                
-        return helper(p, q)        return helper(p, q)
+        }        }
+            return;            return;
+
+        if (first->val != second->val) {        if (first->val != second->val) {
+            same = false;            same = false;
+            return;            return;
+        if (first == nullptr && second == nullptr) {        if (first == nullptr && second == nullptr) {
+    void preOrder(TreeNode* first, TreeNode* second) {    void preOrder(TreeNode* first, TreeNode* second) {
+    bool same = true;    bool same = true;
+ * }; * };
+ */ */
+class Solution {class Solution {
+public:public:
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {} *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {} *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {} *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode *right; *     TreeNode *right;
+ *     int val; *     int val;
+ *     TreeNode *left; *     TreeNode *left;
+ * struct TreeNode { * struct TreeNode {
+ * Definition for a binary tree node. * Definition for a binary tree node.
+
+        if (first == nullptr || second == nullptr) {        if (first == nullptr || second == nullptr) {
+            return;            return;
+        }        }
+            same = false;            same = false;
