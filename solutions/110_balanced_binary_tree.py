@@ -4,21 +4,31 @@
 # URL: https://leetcode.com/problems/balanced-binary-tree/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: N/A
+# Memory: 0.00 MB
 
-class Solution:class Solution:
-    def isBalanced(self, root: Optional[TreeNode]) -> bool:    def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        def dfs(node):        def dfs(node):
-            if not node:            if not node:
-                return 0                return 0
+ * struct TreeNode { * struct TreeNode {
+ *     int val; *     int val;
+ *     TreeNode *left; *     TreeNode *left;
+ *     TreeNode *right; *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {} *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {} *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {} *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * }; * };
+ */ */
+class Solution {class Solution {
+public:public:
+    bool balanced = true;    bool balanced = true;
+    int calculate(TreeNode* node) {    int calculate(TreeNode* node) {
+        if (node == nullptr) {        if (node == nullptr) {
+            return 0;            return 0;
+        }        }
 
-            left_height = 1 + dfs(node.left)            left_height = 1 + dfs(node.left)
-            right_height = 1 + dfs(node.right)            right_height = 1 + dfs(node.right)
-        trace = [True]        trace = [True]
-                        
-            if abs(left_height - right_height) > 1:            if abs(left_height - right_height) > 1:
-                trace[0] = False                trace[0] = False
-                        
-            return max(left_height, right_height)            return max(left_height, right_height)
-        dfs(root)        dfs(root)
-        return trace[0]        return trace[0]
+        int leftHeight = calculate(node->left);        int leftHeight = calculate(node->left);
+        int rightHeight = calculate(node->right);        int rightHeight = calculate(node->right);
+
+        if (abs(leftHeight - rightHeight) > 1) {        if (abs(leftHeight - rightHeight) > 1) {
+            balanced = false;            balanced = false;
+        }        }
+
+        return max(leftHeight, rightHeight) + 1;        return max(leftHeight, rightHeight) + 1;
+    }    }
