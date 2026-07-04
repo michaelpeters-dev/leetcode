@@ -4,20 +4,28 @@
 # URL: https://leetcode.com/problems/validate-binary-search-tree/
 # Submission Status: Accepted
 # Runtime: 0 ms
-# Memory: 21.98 MB
+# Memory: N/A
 
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {} *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {} *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * }; * };
+ */ */
 class Solution {class Solution {
 public:public:
-    bool isValidBST(TreeNode* root) {    bool isValidBST(TreeNode* root) {
-    }    }
- */ */
-    bool isValidH(TreeNode* root, long left, long right) {    bool isValidH(TreeNode* root, long left, long right) {
-        if (root == NULL) {        if (root == NULL) {
+    bool helper(TreeNode* root, long leftMin, long rightMax)    bool helper(TreeNode* root, long leftMin, long rightMax)
+        if (root == nullptr) {        if (root == nullptr) {
             return true;            return true;
         }        }
+        if (root->val <= leftMin || root->val >= rightMax) {        if (root->val <= leftMin || root->val >= rightMax) {
+            return false;            return false;
+        }        }
 
-        if (root->val >= right || root->val <= left) return false;        if (root->val >= right || root->val <= left) return false;
-        return isValidH(root->left, left, root->val) && isValidH(root->right, root->val, right);        return isValidH(root->left, left, root->val) && isValidH(root->right, root->val, right);
+    {    {
+ *     TreeNode *right; *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {} *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+        return helper(root->left, leftMin, root->val) && helper(root->right, root->val, rightMax);        return helper(root->left, leftMin, root->val) && helper(root->right, root->val, rightMax);
     }    }
-        return isValidH(root, LONG_MIN, LONG_MAX);        return isValidH(root, LONG_MIN, LONG_MAX);
-};};
+
+    bool isValidBST(TreeNode* root) {    bool isValidBST(TreeNode* root) {
+        return helper(root, LONG_MIN, LONG_MAX);        return helper(root, LONG_MIN, LONG_MAX);
+    }    }
