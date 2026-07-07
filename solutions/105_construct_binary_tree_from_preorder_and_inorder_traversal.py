@@ -3,8 +3,8 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 # Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: 0.00 MB
+# Runtime: 3 ms
+# Memory: 27.08 MB
 
         if (left > right) {        if (left > right) {
         }        }
