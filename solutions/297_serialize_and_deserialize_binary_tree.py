@@ -3,44 +3,29 @@
 # Difficulty: Hard
 # URL: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 # Submission Status: Accepted
-# Runtime: N/A
+# Runtime: 4 ms
 # Memory: N/A
 
-class Codec:
-    def serialize(self, root):
-        """Encodes a tree to a single string.
+        return carry;        return carry;
+    }    }
 
-        :type root: TreeNode
-        :rtype: str
-        """
-        res = []
-        def dfs(root, res):
-            if not root:
-                res.append("N")
-                return
+    TreeNode* dhelper(int& index, vector<string>& passIn) {    TreeNode* dhelper(int& index, vector<string>& passIn) {
+        if (passIn[index] == "#") {        if (passIn[index] == "#") {
+            index++;            index++;
+            return nullptr;            return nullptr;
+        }        }
+                
+        int num = stoi(passIn[index]);        int num = stoi(passIn[index]);
+        TreeNode* curr = new TreeNode(num);        TreeNode* curr = new TreeNode(num);
 
-            res.append(str(root.val))
-            dfs(root.left, res)
-            dfs(root.right, res)
-        dfs(root, res)
-        return ",".join(res)
+        index++;        index++;
+        curr->left = dhelper(index, passIn);        curr->left = dhelper(index, passIn);
+        curr->right = dhelper(index, passIn);        curr->right = dhelper(index, passIn);
 
-    def deserialize(self, data):
-        """Decodes your encoded data to tree.
+        return curr;        return curr;
+    }    }
 
-        :type data: str
-        :rtype: TreeNode
-        """
-        vals = data.split(",")
-        self.i = 0
-
-        def dfs():
-            if vals[self.i] == "N":
-                self.i += 1
-                return None
-            node = TreeNode(int(vals[self.i]))
-            self.i += 1
-            node.left = dfs()
-            node.right = dfs()
-            return node
-        return dfs()
+    // Decodes your encoded data to tree.    // Decodes your encoded data to tree.
+    TreeNode* deserialize(string data) {    TreeNode* deserialize(string data) {
+        vector<string> passIn;        vector<string> passIn;
+        stringstream ss(data);        stringstream ss(data);
