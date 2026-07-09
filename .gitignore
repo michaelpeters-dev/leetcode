@@ -1,0 +1,15 @@
+# Compiled binaries & build artifacts (keep source only)
+*.o
+*.out
+a.out
+*.exe
+*.class
+*.dSYM/
+# Common competitive-programming junk extensions
+*.cppl
+*.cppc
+# Python
+__pycache__/
+*.pyc
+# OS
+.DS_Store

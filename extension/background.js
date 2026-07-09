@@ -405,6 +405,8 @@ function generateReadme(problems, username) {
 
 My LeetCode solutions, automatically pushed by my **Leetcode** Chrome Extension (Gleetcode).
 
+> This repo is my central competitive-programming store: **LeetCode** (below), plus [**Codeforces**](codeforces/) and [**CSES**](cses/).
+
 ## Solutions
 
 | # | Title | Difficulty | Solution |

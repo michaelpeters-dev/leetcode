@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        
+        int res = n%3;
+        if (res==1 || res==2){
+            cout<<"First\n";
+        }
+        else{
+            cout<<"Second\n";
+        }
+    }
+}
