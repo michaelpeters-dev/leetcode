@@ -3,38 +3,30 @@
 # Difficulty: Medium
 # URL: https://leetcode.com/problems/implement-trie-prefix-tree/
 # Submission Status: Accepted
-# Runtime: N/A
-# Memory: N/A
+# Runtime: 0 ms
+# Memory: 0.00 MB
 
-class Trie:
-    class TrieNode:
-        def __init__(self):
-            self.children = {}
-            self.word = False
+    }    }
+        
+    bool startsWith(string prefix) {    bool startsWith(string prefix) {
+        Trie* curr = this;        Trie* curr = this;
 
-    def __init__(self):
-        self.root = self.TrieNode()
+        for (char& letter: prefix) {        for (char& letter: prefix) {
+            if (!curr->children.count(letter)) {            if (!curr->children.count(letter)) {
+                return false;                return false;
+            }            }
 
-    def insert(self, word: str) -> None:
-        curr = self.root
-        for c in word:
-            if c not in curr.children:
-                curr.children[c] = self.TrieNode()
-            curr = curr.children[c]
-        curr.word = True
+            curr = curr->children[letter];            curr = curr->children[letter];
+        }        }
 
-    def search(self, word: str) -> bool:
-        curr = self.root
-        for c in word:
-            if c not in curr.children:
-                return False
-            curr = curr.children[c]
-        return curr.word
+        return curr->isEnd;        return curr->isEnd;
+            }            }
+            curr = curr->children[letter];            curr = curr->children[letter];
+        }        }
 
-    def startsWith(self, prefix: str) -> bool:
-        curr = self.root
-        for c in prefix:
-            if c not in curr.children:
-                return False
-            curr = curr.children[c]
-        return True
+    }    }
+};};
+
+/**/**
+ * Your Trie object will be instantiated and called as such: * Your Trie object will be instantiated and called as such:
+        return true;        return true;
