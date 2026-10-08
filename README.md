@@ -6,14 +6,14 @@
 
 <p align="center">
   <img alt="Solved: 168" src="https://img.shields.io/badge/Solved-168-ffa116?style=for-the-badge&labelColor=0d1117">
-  <img alt="Easy: 1" src="https://img.shields.io/badge/Easy-1-00b8a3?style=for-the-badge&labelColor=0d1117">
+  <img alt="Easy: 2" src="https://img.shields.io/badge/Easy-2-00b8a3?style=for-the-badge&labelColor=0d1117">
   <img alt="Medium: 0" src="https://img.shields.io/badge/Medium-0-ffc01e?style=for-the-badge&labelColor=0d1117">
   <img alt="Hard: 0" src="https://img.shields.io/badge/Hard-0-ff375f?style=for-the-badge&labelColor=0d1117">
 </p>
 
 Solutions mirrored from LeetCode by [GleetCode](https://github.com/michaelpeters-dev/leetcode), a Chrome extension that commits each accepted submission as I solve it.
 
-**Languages** — C++ 1
+**Languages** — C++ 2
 
 ## Solutions
 
@@ -137,7 +137,7 @@ Solutions mirrored from LeetCode by [GleetCode](https://github.com/michaelpeters
 | 237 | [Delete Node In A Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [237_delete_node_in_a_linked_list.py](solutions/237_delete_node_in_a_linked_list.py) |
 | 238 | [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [238_product_of_array_except_self.py](solutions/238_product_of_array_except_self.py) |
 | 239 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [239_sliding_window_maximum.py](solutions/239_sliding_window_maximum.py) |
-| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [242_valid_anagram.py](solutions/242_valid_anagram.py) |
+| 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | C++ | 2026-10-08 | [242_valid_anagram.cpp](solutions/242_valid_anagram.cpp) |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [268_missing_number.py](solutions/268_missing_number.py) |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [278_first_bad_version.py](solutions/278_first_bad_version.py) |
 | 297 | [Serialize And Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [297_serialize_and_deserialize_binary_tree.py](solutions/297_serialize_and_deserialize_binary_tree.py) |

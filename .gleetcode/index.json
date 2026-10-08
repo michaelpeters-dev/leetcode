@@ -928,14 +928,14 @@
     "valid-anagram": {
       "id": 242,
       "slug": "valid-anagram",
-      "title": null,
-      "difficulty": "Unknown",
-      "lang": null,
-      "ext": "py",
-      "path": "solutions/242_valid_anagram.py",
-      "solvedAt": null,
-      "runtime": null,
-      "memory": null
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "lang": "cpp",
+      "ext": "cpp",
+      "path": "solutions/242_valid_anagram.cpp",
+      "solvedAt": "2026-10-08T13:08:12-04:00",
+      "runtime": "3 ms",
+      "memory": "9.8 MB"
     },
     "reverse-nodes-in-k-group": {
       "id": 25,
