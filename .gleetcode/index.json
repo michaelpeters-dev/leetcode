@@ -2008,14 +2008,14 @@
     "palindrome-number": {
       "id": 9,
       "slug": "palindrome-number",
-      "title": null,
-      "difficulty": "Unknown",
-      "lang": null,
+      "title": "Palindrome Number",
+      "difficulty": "Easy",
+      "lang": "python3",
       "ext": "py",
       "path": "solutions/9_palindrome_number.py",
-      "solvedAt": null,
-      "runtime": null,
-      "memory": null
+      "solvedAt": "2026-10-15T09:28:28-04:00",
+      "runtime": "9 ms",
+      "memory": "19.2 MB"
     }
   },
   "strays": [
