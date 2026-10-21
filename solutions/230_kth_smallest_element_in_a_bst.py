@@ -1,31 +1,35 @@
-# Problem: Kth Smallest Element in a BST
-# Number: 230
+# Problem:    230. Kth Smallest Element in a BST
 # Difficulty: Medium
-# URL: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
-# Submission Status: Accepted
-# Runtime: 0 ms
-# Memory: 0.00 MB
+# Language:   Python3
+# Runtime:    3 ms
+# Memory:     21.9 MB
+# Solved:     2026-10-21
+# URL:        https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 
-        if (counter == k) {        if (counter == k) {
-            dummy->val = curr->val;            dummy->val = curr->val;
-        inOrder(curr->left, dummy, k);        inOrder(curr->left, dummy, k);
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def kthSmallest(self, root: TreeNode | None, k: int) -> int:
+        counter = [0]
+        result = [0]
 
-        }        }
-            return nullptr;            return nullptr;
-        if (curr == nullptr) {        if (curr == nullptr) {
-    TreeNode* inOrder(TreeNode* curr, TreeNode* dummy, int k) {    TreeNode* inOrder(TreeNode* curr, TreeNode* dummy, int k) {
-    static inline int counter;    static inline int counter;
-public:public:
-class Solution {class Solution {
-        counter++;        counter++;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {} *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {} *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {} *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * }; * };
- */ */
- *     TreeNode *left; *     TreeNode *left;
- *     TreeNode *right; *     TreeNode *right;
- * struct TreeNode { * struct TreeNode {
- *     int val; *     int val;
- * Definition for a binary tree node. * Definition for a binary tree node.
-/**/**
+        def inOrder(node):
+            if (node == None):
+                return
+
+            if (node.left):
+                inOrder(node.left)
+            
+            counter[0] += 1
+            if (counter[0] == k):
+                result[0] = node.val
+
+            if (node.right):
+                inOrder(node.right)
+
+        inOrder(root)
+        return result[0]
