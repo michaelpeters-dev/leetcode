@@ -832,14 +832,14 @@
     "kth-smallest-element-in-a-bst": {
       "id": 230,
       "slug": "kth-smallest-element-in-a-bst",
-      "title": null,
-      "difficulty": "Unknown",
-      "lang": null,
+      "title": "Kth Smallest Element in a BST",
+      "difficulty": "Medium",
+      "lang": "python3",
       "ext": "py",
       "path": "solutions/230_kth_smallest_element_in_a_bst.py",
-      "solvedAt": null,
-      "runtime": null,
-      "memory": null
+      "solvedAt": "2026-10-21T17:31:09-04:00",
+      "runtime": "3 ms",
+      "memory": "21.9 MB"
     },
     "power-of-two": {
       "id": 231,
