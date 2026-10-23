@@ -1324,14 +1324,14 @@
     "group-anagrams": {
       "id": 49,
       "slug": "group-anagrams",
-      "title": null,
-      "difficulty": "Unknown",
-      "lang": null,
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "lang": "python3",
       "ext": "py",
       "path": "solutions/49_group_anagrams.py",
-      "solvedAt": null,
-      "runtime": null,
-      "memory": null
+      "solvedAt": "2026-10-23T12:34:33-04:00",
+      "runtime": "13 ms",
+      "memory": "21.9 MB"
     },
     "median-of-two-sorted-arrays": {
       "id": 4,

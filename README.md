@@ -7,13 +7,13 @@
 <p align="center">
   <img alt="Solved: 168" src="https://img.shields.io/badge/Solved-168-ffa116?style=for-the-badge&labelColor=0d1117">
   <img alt="Easy: 4" src="https://img.shields.io/badge/Easy-4-00b8a3?style=for-the-badge&labelColor=0d1117">
-  <img alt="Medium: 1" src="https://img.shields.io/badge/Medium-1-ffc01e?style=for-the-badge&labelColor=0d1117">
+  <img alt="Medium: 2" src="https://img.shields.io/badge/Medium-2-ffc01e?style=for-the-badge&labelColor=0d1117">
   <img alt="Hard: 0" src="https://img.shields.io/badge/Hard-0-ff375f?style=for-the-badge&labelColor=0d1117">
 </p>
 
 Solutions mirrored from LeetCode by [GleetCode](https://github.com/michaelpeters-dev/leetcode), a Chrome extension that commits each accepted submission as I solve it.
 
-**Languages** — Python3 4 · C++ 1
+**Languages** — Python3 5 · C++ 1
 
 ## Solutions
 
@@ -52,7 +52,7 @@ Solutions mirrored from LeetCode by [GleetCode](https://github.com/michaelpeters
 | 45 | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [45_jump_game_ii.py](solutions/45_jump_game_ii.py) |
 | 46 | [Permutations](https://leetcode.com/problems/permutations/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [46_permutations.py](solutions/46_permutations.py) |
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [48_rotate_image.py](solutions/48_rotate_image.py) |
-| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [49_group_anagrams.py](solutions/49_group_anagrams.py) |
+| 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | ![Medium](https://img.shields.io/badge/Medium-ffc01e?style=flat-square) | Python3 | 2026-10-23 | [49_group_anagrams.py](solutions/49_group_anagrams.py) |
 | 50 | [Powx N](https://leetcode.com/problems/powx-n/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [50_powx_n.py](solutions/50_powx_n.py) |
 | 51 | [N Queens](https://leetcode.com/problems/n-queens/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [51_n_queens.py](solutions/51_n_queens.py) |
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [53_maximum_subarray.py](solutions/53_maximum_subarray.py) |
