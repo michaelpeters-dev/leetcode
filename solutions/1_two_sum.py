@@ -1,22 +1,18 @@
-# Problem: Two Sum
-# Number: 1
+# Problem:    1. Two Sum
 # Difficulty: Easy
-# URL: https://leetcode.com/problems/two-sum/
-# Submission Status: Accepted
-# Runtime: 3 ms
-# Memory: 14.81 MB
+# Language:   Python3
+# Runtime:    1 ms
+# Memory:     20.2 MB
+# Solved:     2026-10-23
+# URL:        https://leetcode.com/problems/two-sum/
 
-class Solution {class Solution {
-public:public:
-    vector<int> twoSum(vector<int>& nums, int target) {    vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> store;        unordered_map<int, int> store;
-        for (int i = 0; i < nums.size(); i++) {        for (int i = 0; i < nums.size(); i++) {
-            int num = nums[i];            int num = nums[i];
-            if (store.count(target - num)) {            if (store.count(target - num)) {
-                return {store[target - num], i};                return {store[target - num], i};
-            }            }
-        }        }
-        return {};        return {};
-    }    }
-            store[nums[i]] = i;            store[nums[i]] = i;
-};};
+class Solution:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
+        store = {} #Map of the form: number -> index
+
+        index = 0
+        for num in nums:
+            if target - num in store:
+                return [store[target - num], index]
+            store[num] = index
+            index += 1
