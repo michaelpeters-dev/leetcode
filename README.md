@@ -6,20 +6,20 @@
 
 <p align="center">
   <img alt="Solved: 168" src="https://img.shields.io/badge/Solved-168-ffa116?style=for-the-badge&labelColor=0d1117">
-  <img alt="Easy: 3" src="https://img.shields.io/badge/Easy-3-00b8a3?style=for-the-badge&labelColor=0d1117">
+  <img alt="Easy: 4" src="https://img.shields.io/badge/Easy-4-00b8a3?style=for-the-badge&labelColor=0d1117">
   <img alt="Medium: 1" src="https://img.shields.io/badge/Medium-1-ffc01e?style=for-the-badge&labelColor=0d1117">
   <img alt="Hard: 0" src="https://img.shields.io/badge/Hard-0-ff375f?style=for-the-badge&labelColor=0d1117">
 </p>
 
 Solutions mirrored from LeetCode by [GleetCode](https://github.com/michaelpeters-dev/leetcode), a Chrome extension that commits each accepted submission as I solve it.
 
-**Languages** — Python3 3 · C++ 1
+**Languages** — Python3 4 · C++ 1
 
 ## Solutions
 
 | # | Problem | Difficulty | Language | Solved | Source |
 |--:|:--------|:----------:|:---------|:-------|:-------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [1_two_sum.py](solutions/1_two_sum.py) |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | ![Easy](https://img.shields.io/badge/Easy-00b8a3?style=flat-square) | Python3 | 2026-10-23 | [1_two_sum.py](solutions/1_two_sum.py) |
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [2_add_two_numbers.py](solutions/2_add_two_numbers.py) |
 | 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [3_longest_substring_without_repeating_characters.py](solutions/3_longest_substring_without_repeating_characters.py) |
 | 4 | [Median Of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | ![Unknown](https://img.shields.io/badge/Unknown-8b949e?style=flat-square) | — | — | [4_median_of_two_sorted_arrays.py](solutions/4_median_of_two_sorted_arrays.py) |

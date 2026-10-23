@@ -580,14 +580,14 @@
     "two-sum": {
       "id": 1,
       "slug": "two-sum",
-      "title": null,
-      "difficulty": "Unknown",
-      "lang": null,
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "lang": "python3",
       "ext": "py",
       "path": "solutions/1_two_sum.py",
-      "solvedAt": null,
-      "runtime": null,
-      "memory": null
+      "solvedAt": "2026-10-23T12:31:18-04:00",
+      "runtime": "1 ms",
+      "memory": "20.2 MB"
     },
     "number-of-islands": {
       "id": 200,
