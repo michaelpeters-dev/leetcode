@@ -1,25 +1,28 @@
-# Problem: Longest Consecutive Sequence
-# Number: 128
+# Problem:    128. Longest Consecutive Sequence
 # Difficulty: Medium
-# URL: https://leetcode.com/problems/longest-consecutive-sequence/
-# Submission Status: Accepted
-# Runtime: 79 ms
-# Memory: 88.90 MB
+# Language:   Python3
+# Runtime:    50 ms
+# Memory:     36.5 MB
+# Solved:     2026-10-23
+# URL:        https://leetcode.com/problems/longest-consecutive-sequence/
 
-        }        }
+class Solution:
+    def longestConsecutive(self, nums: list[int]) -> int:
+        store = set()
+        for num in nums:
+            store.add(num)
+        
+        result = 0
 
-        int longest = 0;        int longest = 0;
-        for (const auto& num: store) {        for (const auto& num: store) {
-            if (!store.count(num - 1)) {            if (!store.count(num - 1)) {
-                int temp = num;                int temp = num;
-                int counter = 1;                int counter = 1;
-                while(store.count(temp)) {                while(store.count(temp)) {
-                    longest = max(longest, counter);                    longest = max(longest, counter);
-                    temp++;                    temp++;
-                    counter++;                    counter++;
-                }                }
-            }            }
-        }        }
+        for num in store:
+            if (num - 1 in store):
+                continue
 
-        return longest;        return longest;
-    }    }
+            tempCount = 0
+            while(num in store):
+                tempCount += 1
+                num += 1
+
+            result = max(result, tempCount)
+        
+        return result
