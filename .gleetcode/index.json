@@ -1096,14 +1096,14 @@
     "top-k-frequent-elements": {
       "id": 347,
       "slug": "top-k-frequent-elements",
-      "title": null,
-      "difficulty": "Unknown",
-      "lang": null,
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "lang": "python3",
       "ext": "py",
       "path": "solutions/347_top_k_frequent_elements.py",
-      "solvedAt": null,
-      "runtime": null,
-      "memory": null
+      "solvedAt": "2026-10-23T22:17:40-04:00",
+      "runtime": "15 ms",
+      "memory": "24.8 MB"
     },
     "search-insert-position": {
       "id": 35,
